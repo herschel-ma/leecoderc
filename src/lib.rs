@@ -23,3 +23,6 @@ pub use lc_0226_invert_binary_tree::*;
 
 pub mod lc_0242_valid_anagram;
 pub use lc_0242_valid_anagram::*;
+
+pub mod lc_0733_flood_fill;
+pub use lc_0733_flood_fill::*;
