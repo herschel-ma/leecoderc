@@ -29,9 +29,4 @@ mod tests {
     fn ex2() {
         assert_eq!(longest_palindrome("a".to_string()), 1)
     }
-
-    // #[test]
-    // fn ex3() {
-    //     assert_eq!(longest_palindrome("aA".to_string()), 0)
-    // }
 }
