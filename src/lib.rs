@@ -27,6 +27,9 @@ pub use lc_0169_majority_element::*;
 pub mod lc_0206_reverse_linked_list;
 pub use lc_0206_reverse_linked_list::*;
 
+pub mod lc_0222_count_complete_tree_nodes;
+pub use lc_0222_count_complete_tree_nodes::*;
+
 pub mod lc_0226_invert_binary_tree;
 pub use lc_0226_invert_binary_tree::*;
 
