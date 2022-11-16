@@ -51,6 +51,9 @@ pub use lc_0409_longest_palindrome::*;
 pub mod lc_0278_first_bad_version;
 pub use lc_0278_first_bad_version::*;
 
+pub mod lc_0543_diameter_of_binary_tree;
+pub use lc_0543_diameter_of_binary_tree::*;
+
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
 
