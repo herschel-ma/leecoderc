@@ -62,3 +62,6 @@ pub use lc_0733_flood_fill::*;
 
 pub mod lc_0876_middle_of_the_linked_list;
 pub use lc_0876_middle_of_the_linked_list::*;
+
+pub mod lc_0104_maximum_depth_of_binary_tree;
+pub use lc_0104_maximum_depth_of_binary_tree::*;
