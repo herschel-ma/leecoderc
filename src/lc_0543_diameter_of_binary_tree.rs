@@ -79,6 +79,7 @@ mod tests {
             i32::MIN,
             -2,
         ]);
+        // println!("{}", tree.as_ref().unwrap().borrow());
         assert_eq!(Solution::diameter_of_binary_tree(tree), 8)
     }
 }
