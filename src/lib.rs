@@ -16,6 +16,9 @@ pub use lc_0067_add_binary::*;
 pub mod lc_0070_climbing_stairs;
 pub use lc_0070_climbing_stairs::*;
 
+pub mod lc_0104_maximum_depth_of_binary_tree;
+pub use lc_0104_maximum_depth_of_binary_tree::*;
+
 pub mod lc_0110_balanced_binary_tree;
 pub use lc_0110_balanced_binary_tree::*;
 
@@ -27,8 +30,12 @@ pub use lc_0125_valid_palindrome::*;
 
 pub mod lc_0169_majority_element;
 pub use lc_0169_majority_element::*;
+
 pub mod lc_0206_reverse_linked_list;
 pub use lc_0206_reverse_linked_list::*;
+
+pub mod lc_0217_contains_duplicate;
+pub use lc_0217_contains_duplicate::*;
 
 pub mod lc_0222_count_complete_tree_nodes;
 pub use lc_0222_count_complete_tree_nodes::*;
@@ -62,6 +69,3 @@ pub use lc_0733_flood_fill::*;
 
 pub mod lc_0876_middle_of_the_linked_list;
 pub use lc_0876_middle_of_the_linked_list::*;
-
-pub mod lc_0104_maximum_depth_of_binary_tree;
-pub use lc_0104_maximum_depth_of_binary_tree::*;
