@@ -61,6 +61,9 @@ pub use lc_0242_valid_anagram::*;
 pub mod lc_0295_find_median_from_data_stream;
 pub use lc_0295_find_median_from_data_stream::*;
 
+pub mod lc_0383_ransom_note;
+pub use lc_0383_ransom_note::*;
+
 pub mod lc_0409_longest_palindrome;
 pub use lc_0409_longest_palindrome::*;
 
