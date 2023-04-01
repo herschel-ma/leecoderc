@@ -40,6 +40,9 @@ pub use lc_0125_valid_palindrome::*;
 pub mod lc_0141_linked_list_cycle;
 pub use lc_0141_linked_list_cycle::*;
 
+pub mod lc_0155_min_stack;
+pub use lc_0155_min_stack::*;
+
 pub mod lc_0169_majority_element;
 pub use lc_0169_majority_element::*;
 
@@ -55,8 +58,8 @@ pub use lc_0222_count_complete_tree_nodes::*;
 pub mod lc_0226_invert_binary_tree;
 pub use lc_0226_invert_binary_tree::*;
 
-pub mod lc_232_implement_queue_using_stacks;
-pub use lc_232_implement_queue_using_stacks::*;
+pub mod lc_0232_implement_queue_using_stacks;
+pub use lc_0232_implement_queue_using_stacks::*;
 
 pub mod lc_0235_lowest_common_ancestor_of_a_binary_search_tree;
 pub use lc_0235_lowest_common_ancestor_of_a_binary_search_tree::*;
