@@ -16,7 +16,7 @@ impl Solution {
                 }
                 2 => {
                     nums.swap(cur, right);
-                    if right <= 0 {
+                    if right == 0 {
                         break;
                     }
                     right -= 1;
