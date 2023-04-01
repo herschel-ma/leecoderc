@@ -19,6 +19,9 @@ pub use lc_0053_maximum_subarry::*;
 pub mod lc_0057_inert_interval;
 pub use lc_0057_inert_interval::*;
 
+pub mod lc_0075_sort_colors;
+pub use lc_0075_sort_colors::*;
+
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 
