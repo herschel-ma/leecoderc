@@ -101,3 +101,6 @@ pub use lc_0691_stickers_to_spell_word::*;
 
 pub mod lc_0973_k_closest_points_to_origin;
 pub use lc_0973_k_closest_points_to_origin::*;
+
+pub mod lc_1141_user_activity_for_the_past_30_days;
+pub use lc_1141_user_activity_for_the_past_30_days::*;
