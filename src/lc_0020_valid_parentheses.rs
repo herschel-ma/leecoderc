@@ -22,7 +22,7 @@ pub fn is_valid(s: String) -> bool {
 
 
 mod tests {
-   use super::*;
+    use super::*;
 
     #[test]
     fn ex1() {
