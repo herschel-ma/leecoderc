@@ -4,6 +4,9 @@ pub fn insert(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>>
     let mut pushed = false;
 
     for entry in intervals {
+        if entry.len() == 0 {
+            continue;
+        }
         if entry[0] > to_insert[1] {
             if !pushed {
                 result.push(to_insert.clone());
