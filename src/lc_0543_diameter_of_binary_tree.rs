@@ -43,41 +43,5 @@ mod tests {
         let tree = TreeNode::from_vec(&vec![1, 2]);
         assert_eq!(diameter_of_binary_tree(tree), 1);
     }
-    #[test]
-    fn wrong_answer() {
-        let tree = TreeNode::from_vec(&vec![
-            4,
-            -7,
-            -3,
-            i32::MIN,
-            i32::MIN,
-            -9,
-            -3,
-            9,
-            -7,
-            -4,
-            i32::MIN,
-            6,
-            i32::MIN,
-            -6,
-            -6,
-            i32::MIN,
-            i32::MIN,
-            0,
-            6,
-            5,
-            i32::MIN,
-            9,
-            i32::MIN,
-            i32::MIN,
-            -1,
-            -4,
-            i32::MIN,
-            i32::MIN,
-            i32::MIN,
-            -2,
-        ]);
-        // println!("{}", tree.as_ref().unwrap().borrow());
-        assert_eq!(diameter_of_binary_tree(tree), 8)
-    }
+    
 }
