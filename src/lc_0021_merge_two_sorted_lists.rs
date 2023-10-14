@@ -1,5 +1,5 @@
 
-use crate::ListNode;
+use crate::{ListNode};
 pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     if list1.is_none() {
         return list2
