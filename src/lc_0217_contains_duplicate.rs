@@ -26,8 +26,6 @@ mod tests {
 
     #[test]
     fn ex3() {
-        assert!(contains_duplicate(vec![
-            1, 1, 1, 3, 3, 4, 3, 2, 4, 2
-        ]))
+        assert!(contains_duplicate(vec![1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))
     }
 }

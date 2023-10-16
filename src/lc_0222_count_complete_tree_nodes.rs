@@ -1,7 +1,7 @@
 use crate::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
- 
+
 pub fn count_nodes(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
     if let Some(r) = root {
         let lcount = {
@@ -25,8 +25,7 @@ pub fn count_nodes(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         if lcount == rcount {
             2i32.pow(lcount) - 1
         } else {
-            1 + count_nodes(r.borrow().left.clone())
-                + count_nodes(r.borrow().right.clone())
+            1 + count_nodes(r.borrow().left.clone()) + count_nodes(r.borrow().right.clone())
         }
     } else {
         0
