@@ -1,5 +1,6 @@
 #[derive(Default)]
-struct MinStack {
+#[warn(dead_code)]
+pub struct MinStack {
     stack: Vec<i32>,
     min_stack: Vec<i32>,
 }
@@ -49,10 +50,9 @@ impl MinStack {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-
     #[test]
     fn ex1() {
+        use super::MinStack;
         let mut min_stack = MinStack::new();
         min_stack.push(-2);
         min_stack.push(0);
