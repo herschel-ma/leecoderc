@@ -10,7 +10,6 @@ pub fn majority_element(nums: Vec<i32>) -> i32 {
     count_vec[0].0
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -8,7 +8,6 @@ pub fn is_anagram(s: String, t: String) -> bool {
     s == t
 }
 
-
 #[cfg(test)]
 mod test {
     use crate::is_anagram;

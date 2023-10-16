@@ -18,7 +18,6 @@ pub fn middle_node(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     slow.clone()
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;

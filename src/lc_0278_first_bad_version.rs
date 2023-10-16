@@ -8,36 +8,36 @@ pub struct Solution {
 impl Solution {
     pub fn first_bad_version(&self, n: i32) -> i32 {
         if self.isBadVersion(1) {
-            return 1;
+        return 1;
+    }
+    let mut good = 1i64;
+    let mut bad = n as i64;
+    loop {
+        let mid = (good + bad) / 2;
+        // println!("mid = {mid} {}", self.isBadVersion(mid));
+        if self.isBadVersion(mid as i32) {
+            bad = mid;
+        } else {
+            good = mid;
         }
-        let mut good = 1i64;
-        let mut bad = n as i64;
-        loop {
-            let mid = (good + bad) / 2;
-            // println!("mid = {mid} {}", self.isBadVersion(mid));
-            if self.isBadVersion(mid as i32) {
-                bad = mid;
-            } else {
-                good = mid;
-            }
-            if good + 1 == bad {
-                return bad as i32;
-            }
+        if good + 1 == bad {
+            return bad as i32;
         }
     }
+}
 
-    #[allow(non_snake_case)]
-    fn isBadVersion(&self, n: i32) -> bool {
-        self.bad_version <= n
-    }
+#[allow(non_snake_case)]
+fn isBadVersion(&self, n: i32) -> bool {
+    self.bad_version <= n
+}
 
-    pub fn new(bad_version: i32) -> Self { Self { bad_version }}
+pub fn new(bad_version: i32) -> Self { Self { bad_version }}
 }
 
 
 #[cfg(test)]
 mod test {
-    use super::*;
+use super::*;
     #[test]
     fn ex1() {
         let fbv = Solution::new(4);

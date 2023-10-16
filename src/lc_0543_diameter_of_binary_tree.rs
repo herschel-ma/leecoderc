@@ -43,5 +43,4 @@ mod tests {
         let tree = TreeNode::from_vec(&vec![1, 2]);
         assert_eq!(diameter_of_binary_tree(tree), 1);
     }
-    
 }
