@@ -28,25 +28,16 @@ mod tests {
 
     #[test]
     fn ex1() {
-        assert_eq!(
-            length_of_longest_substring("abcabcbb".to_string()),
-            3
-        );
+        assert_eq!(length_of_longest_substring("abcabcbb".to_string()), 3);
     }
 
     #[test]
     fn ex2() {
-        assert_eq!(
-            length_of_longest_substring("bbbbb".to_string()),
-            1
-        );
+        assert_eq!(length_of_longest_substring("bbbbb".to_string()), 1);
     }
 
     #[test]
     fn ex3() {
-        assert_eq!(
-            length_of_longest_substring("pwwkew".to_string()),
-            3
-        );
+        assert_eq!(length_of_longest_substring("pwwkew".to_string()), 3);
     }
 }

@@ -13,7 +13,6 @@ pub fn climb_stairs(n: i32) -> i32 {
     return re;
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
