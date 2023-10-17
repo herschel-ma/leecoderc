@@ -63,6 +63,7 @@ pub fn paint_walls(cost: Vec<i32>, time: Vec<i32>) -> i32 {
     return dp[0][n];
 }
 
+#[cfg(test)]
 mod tests {
     #[test]
     fn test_case_1() {

@@ -1,5 +1,5 @@
 #[derive(Default)]
-#[warn(dead_code)]
+#[allow(dead_code)]
 pub struct MinStack {
     stack: Vec<i32>,
     min_stack: Vec<i32>,
@@ -11,6 +11,7 @@ pub struct MinStack {
  *
  */
 
+#[allow(dead_code)]
 impl MinStack {
     fn new() -> Self {
         Self::default()
