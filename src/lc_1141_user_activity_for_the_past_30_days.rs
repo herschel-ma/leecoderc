@@ -24,14 +24,10 @@
 /// The query result format is in the following example.
 ///
 
-pub struct Solution {}
-
 /// select activity_date as day, count(distinct user_id) as active_users from Activity
 /// where (activity_date >= "2019-06-27" and activity_date <= "2019-07-27")
 /// group by activity_date;
 #[allow(dead_code)]
-impl Solution {
-    fn dont_need() -> i32 {
-        0
-    }
+fn dont_need() -> i32 {
+    0
 }

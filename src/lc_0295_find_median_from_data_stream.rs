@@ -1,6 +1,7 @@
 use std::cmp::Reverse;
 use std::collections::BinaryHeap;
 
+#[allow(dead_code)]
 #[derive(Default)]
 pub struct MedianFinder {
     small: BinaryHeap<i32>,
@@ -12,6 +13,7 @@ pub struct MedianFinder {
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
+#[allow(dead_code)]
 impl MedianFinder {
     fn new() -> Self {
         Default::default()

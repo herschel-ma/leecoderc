@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 struct MyQueue {
     stack1: Vec<i32>,
     stack2: Vec<i32>,
@@ -7,6 +8,7 @@ struct MyQueue {
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
+#[allow(dead_code)]
 impl MyQueue {
     fn new() -> Self {
         Self {

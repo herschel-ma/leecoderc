@@ -1,6 +1,4 @@
 use std::collections::HashMap;
-pub struct Solution {}
-
 /// Solution function 题解
 /// 这道题给了我们N个贴片，每个贴片上有一个小写字母的单词，给了我们一个
 /// 目标单词 target, 让我们通过剪下贴片能拼出目标值 target, 如果发现不行，
@@ -50,7 +48,6 @@ pub struct Solution {}
 ///     target: String: 要拼写出的单词
 /// Returns:
 ///     i32: 拼写出单词需要的最少的贴纸数量
-impl Solution {
     pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
         let n = target.len();
         let mut dp = vec![std::i32::MAX; 1 << n];
@@ -92,17 +89,14 @@ impl Solution {
             dp[(1 << n) - 1]
         }
     }
-}
 
 #[cfg(test)]
 mod tests {
-
-    use super::*;
-
     #[test]
     fn test_min_stickers() {
+        use super::*;
         assert_eq!(
-            Solution::min_stickers(
+            min_stickers(
                 vec![
                     String::from("with"),
                     String::from("example"),
@@ -116,8 +110,9 @@ mod tests {
 
     #[test]
     fn test_min_stickers2() {
+        use super::*;
         assert_eq!(
-            Solution::min_stickers(
+            min_stickers(
                 vec![String::from("notice"), String::from("possible")],
                 String::from("basicbasic")
             ),
