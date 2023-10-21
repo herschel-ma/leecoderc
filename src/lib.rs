@@ -108,5 +108,8 @@ pub use lc_0973_k_closest_points_to_origin::*;
 pub mod lc_1141_user_activity_for_the_past_30_days;
 pub use lc_1141_user_activity_for_the_past_30_days::*;
 
+pub mod lc_1361_validate_binary_tree_nodes;
+pub use lc_1361_validate_binary_tree_nodes::*;
+
 pub mod lc_2732_painting_the_walls;
 pub use lc_2732_painting_the_walls::*;
