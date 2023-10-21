@@ -113,3 +113,6 @@ pub use lc_1361_validate_binary_tree_nodes::*;
 
 pub mod lc_2732_painting_the_walls;
 pub use lc_2732_painting_the_walls::*;
+
+pub mod select_sort;
+pub use select_sort::*;
