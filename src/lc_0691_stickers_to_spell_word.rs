@@ -48,47 +48,47 @@ use std::collections::HashMap;
 ///     target: String: 要拼写出的单词
 /// Returns:
 ///     i32: 拼写出单词需要的最少的贴纸数量
-    pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
-        let n = target.len();
-        let mut dp = vec![std::i32::MAX; 1 << n];
-        dp[0] = 0;
-        let cnts: Vec<HashMap<char, i32>> = stickers
-            .iter()
-            .map(|s| {
-                let mut cnt = HashMap::new();
-                for ch in s.chars() {
-                    *cnt.entry(ch).or_insert(0) += 1;
-                }
-                cnt
-            })
-            .collect();
-        for state in 0..(1 << n) {
-            if dp[state] == std::i32::MAX {
-                continue;
+pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
+    let n = target.len();
+    let mut dp = vec![std::i32::MAX; 1 << n];
+    dp[0] = 0;
+    let cnts: Vec<HashMap<char, i32>> = stickers
+        .iter()
+        .map(|s| {
+            let mut cnt = HashMap::new();
+            for ch in s.chars() {
+                *cnt.entry(ch).or_insert(0) += 1;
             }
-            for cnt in &cnts {
-                let mut now = state;
-                let mut new_count = cnt.clone();
-                for (i, ch) in target.chars().enumerate() {
-                    if now & (1 << i) != 0 {
-                        continue;
-                    }
-                    if let Some(x) = new_count.get_mut(&ch) {
-                        if *x > 0 {
-                            *x -= 1;
-                            now |= 1 << i;
-                        }
-                    }
-                }
-                dp[now] = dp[now].min(dp[state] + 1);
-            }
+            cnt
+        })
+        .collect();
+    for state in 0..(1 << n) {
+        if dp[state] == std::i32::MAX {
+            continue;
         }
-        if dp[(1 << n) - 1] == std::i32::MAX {
-            -1
-        } else {
-            dp[(1 << n) - 1]
+        for cnt in &cnts {
+            let mut now = state;
+            let mut new_count = cnt.clone();
+            for (i, ch) in target.chars().enumerate() {
+                if now & (1 << i) != 0 {
+                    continue;
+                }
+                if let Some(x) = new_count.get_mut(&ch) {
+                    if *x > 0 {
+                        *x -= 1;
+                        now |= 1 << i;
+                    }
+                }
+            }
+            dp[now] = dp[now].min(dp[state] + 1);
         }
     }
+    if dp[(1 << n) - 1] == std::i32::MAX {
+        -1
+    } else {
+        dp[(1 << n) - 1]
+    }
+}
 
 #[cfg(test)]
 mod tests {
