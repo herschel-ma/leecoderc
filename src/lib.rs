@@ -111,6 +111,9 @@ pub use lc_1141_user_activity_for_the_past_30_days::*;
 pub mod lc_1361_validate_binary_tree_nodes;
 pub use lc_1361_validate_binary_tree_nodes::*;
 
+pub mod lc_2050_parallel_courses_3;
+pub use lc_2050_parallel_courses_3::*;
+
 pub mod lc_2732_painting_the_walls;
 pub use lc_2732_painting_the_walls::*;
 
