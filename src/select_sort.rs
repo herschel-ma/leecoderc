@@ -15,7 +15,7 @@ pub fn find_smallest(array: &Vec<i32>) -> i32 {
 
 pub fn quick_sort(array: &mut Vec<i32>) -> Vec<i32> {
     let mut new_array = Vec::with_capacity(array.len());
-    for i in 0..array.len() {
+    for _i in 0..array.len() {
         let smallest_index = find_smallest(&array);
         new_array.push(array.remove(smallest_index as usize));
     }
