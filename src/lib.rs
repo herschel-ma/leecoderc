@@ -120,5 +120,8 @@ pub use lc_2732_painting_the_walls::*;
 pub mod select_sort;
 pub use select_sort::*;
 
+pub mod quick_sort;
+pub use quick_sort::*;
+
 pub mod recursive_sum;
 pub use recursive_sum::*;
