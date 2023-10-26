@@ -85,8 +85,12 @@ pub use lc_0409_longest_palindrome::*;
 pub mod lc_0278_first_bad_version;
 pub use lc_0278_first_bad_version::*;
 
+pub mod lc_0515_find_largest_value_in_each_tree_row;
+pub use lc_0515_find_largest_value_in_each_tree_row::*;
+
 pub mod lc_0542_01_matrix;
 pub use lc_0542_01_matrix::*;
+
 pub mod lc_0543_diameter_of_binary_tree;
 pub use lc_0543_diameter_of_binary_tree::*;
 
