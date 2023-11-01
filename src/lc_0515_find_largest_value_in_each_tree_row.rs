@@ -1,7 +1,7 @@
 use crate::TreeNode;
 use std::cell::RefCell;
-use std::rc::Rc;
 use std::collections::VecDeque;
+use std::rc::Rc;
 
 //BFS
 pub fn largest_values(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
@@ -30,7 +30,6 @@ pub fn largest_values(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
     result
 }
 
-
 #[cfg(test)]
 mod tests {
     use crate::{largest_values, TreeNode};
@@ -38,17 +37,16 @@ mod tests {
     #[test]
     fn case() {
         let input = vec![1, 3, 2, 5, 3, i32::MIN, 9];
-        let root =  TreeNode::from_vec(input.as_slice()) ;
+        let root = TreeNode::from_vec(input.as_slice());
         let output = vec![1, 3, 9];
         assert_eq!(largest_values(root), output);
     }
-    
+
     #[test]
     fn case2() {
         let input = vec![1, 2, 3];
-        let root =  TreeNode::from_vec(input.as_slice()) ;
+        let root = TreeNode::from_vec(input.as_slice());
         let output = vec![1, 3];
         assert_eq!(largest_values(root), output);
     }
 }
-

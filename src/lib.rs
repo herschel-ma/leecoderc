@@ -85,6 +85,9 @@ pub use lc_0409_longest_palindrome::*;
 pub mod lc_0278_first_bad_version;
 pub use lc_0278_first_bad_version::*;
 
+pub mod lc_0501_find_mode_in_binary_search_tree;
+pub use lc_0501_find_mode_in_binary_search_tree::*;
+
 pub mod lc_0515_find_largest_value_in_each_tree_row;
 pub use lc_0515_find_largest_value_in_each_tree_row::*;
 
