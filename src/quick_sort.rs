@@ -4,14 +4,14 @@ pub fn quick_sort(mut array: Vec<i32>) -> Vec<i32> {
         return array;
     } else {
         let pivot = array.remove(0); // 递归条件
-        // 前者为由所有小于基准值的元素组成的子数组
-        // 后者为由所有大于基准值的元素组成的子数组
+                                     // 前者为由所有小于基准值的元素组成的子数组
+                                     // 后者为由所有大于基准值的元素组成的子数组
         let (less, greater): (Vec<i32>, Vec<i32>) = array.into_iter().partition(|&x| x <= pivot);
         let mut sorted_less = quick_sort(less);
         let sorted_greater = quick_sort(greater);
         sorted_less.push(pivot);
         sorted_less.extend(sorted_greater);
-        return sorted_less
+        return sorted_less;
     }
 }
 
