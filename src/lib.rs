@@ -118,6 +118,9 @@ pub use lc_1141_user_activity_for_the_past_30_days::*;
 pub mod lc_1361_validate_binary_tree_nodes;
 pub use lc_1361_validate_binary_tree_nodes::*;
 
+pub mod lc_1441_build_an_array_with_stack_operations;
+pub use lc_1441_build_an_array_with_stack_operations::*;
+
 pub mod lc_2050_parallel_courses_3;
 pub use lc_2050_parallel_courses_3::*;
 
