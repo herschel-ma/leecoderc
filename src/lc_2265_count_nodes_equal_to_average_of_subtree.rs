@@ -10,11 +10,11 @@ fn r(root: &Option<Rc<RefCell<TreeNode>>>, res: &mut i32, count: &mut i32, s: &m
 
         r(&node.left, res, &mut m, &mut t);
         r(&node.right, res, &mut m, &mut t);
-        
+
         if node.val == t / m {
             *res += 1
         }
-        
+
         *s += t;
         *count += m;
     }
