@@ -121,6 +121,9 @@ pub use lc_1361_validate_binary_tree_nodes::*;
 pub mod lc_2050_parallel_courses_3;
 pub use lc_2050_parallel_courses_3::*;
 
+pub mod lc_2265_count_nodes_equal_to_average_of_subtree;
+pub use lc_2265_count_nodes_equal_to_average_of_subtree::*;
+
 pub mod lc_2433_find_the_original_array_of_prefixes;
 pub use lc_2433_find_the_original_array_of_prefixes::*;
 
