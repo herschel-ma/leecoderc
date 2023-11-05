@@ -121,6 +121,9 @@ pub use lc_1361_validate_binary_tree_nodes::*;
 pub mod lc_1441_build_an_array_with_stack_operations;
 pub use lc_1441_build_an_array_with_stack_operations::*;
 
+pub mod lc_1503_last_moment_before_all_ants_fall_out_of_a_plank;
+pub use lc_1503_last_moment_before_all_ants_fall_out_of_a_plank::*;
+
 pub mod lc_2050_parallel_courses_3;
 pub use lc_2050_parallel_courses_3::*;
 
