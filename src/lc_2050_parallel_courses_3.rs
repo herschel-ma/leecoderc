@@ -3,7 +3,7 @@ pub fn minimum_time(n: i32, relations: Vec<Vec<i32>>, time: Vec<i32>) -> i32 {
     let mut graph: Vec<Vec<i32>> = vec![vec![]; n as usize];
     for rel in relations {
         if let [prev, next] = rel.as_slice() {
-            graph[(prev - 1) as usize].push((next - 1) as i32);
+            graph[(prev - 1) as usize].push(next - 1);
         }
     }
     // create a memoization table(an array)
@@ -14,7 +14,7 @@ pub fn minimum_time(n: i32, relations: Vec<Vec<i32>>, time: Vec<i32>) -> i32 {
         over_all_time =
             over_all_time.max(calculate_complete_course(course, &mut memo, &graph, &time))
     }
-    return over_all_time;
+    over_all_time
 }
 // define a recusive function to calculate the minimum time
 // to complete a course
@@ -39,7 +39,7 @@ fn calculate_complete_course(
             max_prerequisite_time.max(calculate_complete_course(*prereq, memo, graph, time));
     }
     memo[course as usize] = max_prerequisite_time + time[course as usize];
-    return memo[course as usize];
+    memo[course as usize]
 }
 
 #[cfg(test)]

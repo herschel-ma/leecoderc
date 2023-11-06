@@ -41,7 +41,7 @@ mod tests {
 
     #[test]
     pub fn creat_list() {
-        let mut list = ListNode::from_vec(&vec![1, 2, 3, 4, 5]);
+        let mut list = ListNode::from_vec(&[1, 2, 3, 4, 5]);
 
         let mut n = 1;
         while let Some(entry) = list {
@@ -53,7 +53,7 @@ mod tests {
 
     #[test]
     fn convert_back_to_array() {
-        let list = ListNode::from_vec(&vec![1, 2, 3, 4, 5]).unwrap();
+        let list = ListNode::from_vec(&[1, 2, 3, 4, 5]).unwrap();
         let ary = list.into_array();
         assert_eq!(ary, vec![1, 2, 3, 4, 5])
     }

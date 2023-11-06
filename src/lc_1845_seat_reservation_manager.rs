@@ -1,7 +1,9 @@
+#[allow(dead_code)]
 struct SeatManager {
     seats: Vec<i32>,
 }
 
+#[allow(dead_code)]
 impl SeatManager {
     fn new(n: i32) -> Self {
         Self {

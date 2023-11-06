@@ -12,7 +12,7 @@ fn height_is_balanced(root: &Option<Rc<RefCell<TreeNode>>>) -> Option<i32> {
         match (lh, rh) {
             (Some(lh), Some(rh)) => {
                 if (lh - rh).abs() < 2 {
-                    return Some(lh.max(rh) + 1);
+                    Some(lh.max(rh) + 1)
                 } else {
                     None
                 }

@@ -1,7 +1,7 @@
 pub fn quick_sort(mut array: Vec<i32>) -> Vec<i32> {
     // 基线条件：为空或只包含一个元素的数组是“有序”的
     if array.len() < 2 {
-        return array;
+        array
     } else {
         let pivot = array.remove(0); // 递归条件
                                      // 前者为由所有小于基准值的元素组成的子数组
@@ -11,7 +11,7 @@ pub fn quick_sort(mut array: Vec<i32>) -> Vec<i32> {
         let sorted_greater = quick_sort(greater);
         sorted_less.push(pivot);
         sorted_less.extend(sorted_greater);
-        return sorted_less;
+        sorted_less
     }
 }
 

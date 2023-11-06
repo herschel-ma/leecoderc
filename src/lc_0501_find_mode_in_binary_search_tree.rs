@@ -6,8 +6,8 @@ fn r(root: &Option<Rc<RefCell<TreeNode>>>, freq: &mut HashMap<i32, i32>) {
         let node = root.borrow();
         let value = node.val;
         *freq.entry(value).or_insert(0) += 1;
-        r(&&node.left, freq);
-        r(&&node.right, freq);
+        r(&node.left, freq);
+        r(&node.right, freq);
     }
 }
 

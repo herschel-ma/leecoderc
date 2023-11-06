@@ -1,8 +1,8 @@
 pub fn sum(array: &mut Vec<i32>) -> i32 {
-    if array.len() == 0 {
+    if array.is_empty() {
         return 0;
     }
-    return array.pop().unwrap() + sum(array);
+    array.pop().unwrap() + sum(array)
 }
 
 #[cfg(test)]
