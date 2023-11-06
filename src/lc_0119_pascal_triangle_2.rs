@@ -6,7 +6,7 @@ pub fn get_row(row_index: i32) -> Vec<i32> {
     for row in 1..=row_index as usize {
         std::mem::swap(&mut current, &mut prev);
         current[0] = prev[0];
-        for i in 1..row as usize + 1 {
+        for i in 1..row + 1 {
             current[i] = prev[i] + prev[i - 1];
         }
     }

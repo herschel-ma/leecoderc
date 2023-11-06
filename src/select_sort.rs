@@ -1,22 +1,22 @@
-pub fn find_smallest(array: &Vec<i32>) -> i32 {
+pub fn find_smallest(array: &[i32]) -> i32 {
     // smallest value
     let mut smallest = array[0];
     // index of smallest element
     let mut smallest_index = 0;
 
-    for i in 0..array.len() {
+    for (i, _ele) in array.iter().enumerate() {
         if array[i] <= smallest {
             smallest = array[i];
             smallest_index = i;
         }
     }
-    return smallest_index as i32;
+    smallest_index as i32
 }
 
 pub fn select_sort(array: &mut Vec<i32>) -> Vec<i32> {
     let mut new_array = Vec::with_capacity(array.len());
     for _i in 0..array.len() {
-        let smallest_index = find_smallest(&array);
+        let smallest_index = find_smallest(array);
         new_array.push(array.remove(smallest_index as usize));
     }
     new_array

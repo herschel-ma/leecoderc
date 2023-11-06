@@ -19,13 +19,13 @@ mod tests {
     use super::*;
     #[test]
     fn ex1() {
-        let root = TreeNode::from_vec(&vec![3, 9, 20, i32::MIN, i32::MIN, 15, 7]);
+        let root = TreeNode::from_vec(&[3, 9, 20, i32::MIN, i32::MIN, 15, 7]);
         assert_eq!(max_depth(root), 3);
     }
 
     #[test]
     fn ex2() {
-        let root = TreeNode::from_vec(&vec![1, i32::MIN, 2]);
+        let root = TreeNode::from_vec(&[1, i32::MIN, 2]);
         assert_eq!(max_depth(root), 2)
     }
 }

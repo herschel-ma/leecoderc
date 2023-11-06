@@ -20,7 +20,7 @@ mod tests {
 
     #[test]
     fn ex1() {
-        let head = ListNode::from_vec(&vec![1, 2, 3, 4, 5]);
+        let head = ListNode::from_vec(&[1, 2, 3, 4, 5]);
         assert_eq!(
             vec![5, 4, 3, 2, 1],
             reverse_list(head).unwrap().as_ref().into_array()
@@ -29,7 +29,7 @@ mod tests {
 
     #[test]
     fn ex2() {
-        let head = ListNode::from_vec(&vec![1, 2]);
+        let head = ListNode::from_vec(&[1, 2]);
         assert_eq!(
             vec![2, 1],
             reverse_list(head).unwrap().as_ref().into_array()

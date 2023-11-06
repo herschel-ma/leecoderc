@@ -1,10 +1,10 @@
 pub fn insert(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>> {
     let mut result = Vec::new();
-    let mut to_insert = new_interval.clone();
+    let mut to_insert = new_interval;
     let mut pushed = false;
 
     for entry in intervals {
-        if entry.len() == 0 {
+        if entry.is_empty() {
             continue;
         }
         if entry[0] > to_insert[1] {

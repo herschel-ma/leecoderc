@@ -1,4 +1,4 @@
-pub fn build_array(target: Vec<i32>, n: i32) -> Vec<String> {
+pub fn build_array(target: Vec<i32>, _n: i32) -> Vec<String> {
     let target_set: std::collections::HashSet<_> = target.iter().cloned().collect();
     let mut result = vec![];
 

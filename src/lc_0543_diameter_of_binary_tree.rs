@@ -34,13 +34,13 @@ mod tests {
 
     #[test]
     fn ex1() {
-        let tree = TreeNode::from_vec(&vec![1, 2, 3, 4, 5]);
+        let tree = TreeNode::from_vec(&[1, 2, 3, 4, 5]);
         assert_eq!(diameter_of_binary_tree(tree), 3);
     }
 
     #[test]
     fn ex2() {
-        let tree = TreeNode::from_vec(&vec![1, 2]);
+        let tree = TreeNode::from_vec(&[1, 2]);
         assert_eq!(diameter_of_binary_tree(tree), 1);
     }
 }

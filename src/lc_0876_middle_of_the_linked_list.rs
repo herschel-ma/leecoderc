@@ -24,13 +24,13 @@ mod tests {
 
     #[test]
     fn ex1() {
-        let list = ListNode::from_vec(&vec![1, 2, 3, 4, 5]);
+        let list = ListNode::from_vec(&[1, 2, 3, 4, 5]);
         let middle = middle_node(list).unwrap().into_array();
         assert_eq!(middle, vec![3, 4, 5]);
     }
     #[test]
     fn ex2() {
-        let list = ListNode::from_vec(&vec![1, 2, 3, 4, 5, 6]);
+        let list = ListNode::from_vec(&[1, 2, 3, 4, 5, 6]);
         let middle = middle_node(list).unwrap().into_array();
         assert_eq!(middle, vec![4, 5, 6]);
     }

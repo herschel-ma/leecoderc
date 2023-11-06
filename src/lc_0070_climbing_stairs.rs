@@ -10,7 +10,7 @@ pub fn climb_stairs(n: i32) -> i32 {
         f1 = f2;
         f2 = re;
     }
-    return re;
+    re
 }
 
 #[cfg(test)]

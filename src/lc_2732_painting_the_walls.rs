@@ -21,7 +21,7 @@ pub fn paint_walls_error(cost: Vec<i32>, time: Vec<i32>) -> i32 {
 
     for (c, t) in cost.iter().zip(time.iter()) {
         // println!("{}-{}", c, t);
-        if (t + 1) as usize >= n as usize {
+        if (t + 1) as usize >= n {
             if f[n].is_none() || f[n].unwrap() > *c {
                 f[n] = Some(*c)
             }
@@ -60,7 +60,7 @@ pub fn paint_walls(cost: Vec<i32>, time: Vec<i32>) -> i32 {
             dp[i][need_to_take] = take_yes.min(take_no);
         }
     }
-    return dp[0][n];
+    dp[0][n]
 }
 
 #[cfg(test)]

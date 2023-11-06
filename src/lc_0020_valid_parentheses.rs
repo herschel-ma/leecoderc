@@ -17,7 +17,7 @@ pub fn is_valid(s: String) -> bool {
             _ => return false,
         }
     }
-    stack.len() == 0
+    stack.is_empty()
 }
 
 mod tests {
