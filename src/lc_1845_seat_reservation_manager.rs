@@ -7,7 +7,7 @@ struct SeatManager {
 impl SeatManager {
     fn new(n: i32) -> Self {
         Self {
-            seats: (1..n).rev().collect(),
+            seats: (1..=n).rev().collect(),
         }
     }
     fn reserve(&mut self) -> i32 {
