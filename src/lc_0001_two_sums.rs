@@ -47,4 +47,3 @@ mod tests {
         assert_eq!(two_sum(list, 6), result);
     }
 }
-
