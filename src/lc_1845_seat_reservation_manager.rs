@@ -13,7 +13,7 @@ impl SeatManager {
     fn reserve(&mut self) -> i32 {
         self.seats.pop().unwrap()
     }
-    fn unreserve(&mut self, seat_number: i32){
+    fn unreserve(&mut self, seat_number: i32) {
         let mut left: usize = 0;
         let mut right: usize = self.seats.len();
 

@@ -73,4 +73,3 @@ mod tests {
         assert_eq!(max_value(n, index, max_sum), 3)
     }
 }
-
