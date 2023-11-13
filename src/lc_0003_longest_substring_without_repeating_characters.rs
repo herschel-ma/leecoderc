@@ -1,5 +1,7 @@
-pub fn length_of_longest_substring(s: String) -> i32 {
-    use std::collections::HashSet;
+use std::collections::HashMap;
+use std::collections::HashSet;
+
+pub fn length_of_longest_substring_v1(s: String) -> i32 {
     let array = s.chars().collect::<Vec<char>>();
 
     let mut hs = HashSet::new();
@@ -20,6 +22,21 @@ pub fn length_of_longest_substring(s: String) -> i32 {
     }
 
     max_len as i32
+}
+
+// 相当于取一个滑动窗口，求滑动窗口的最大长度
+pub fn length_of_longest_substring(s: String) -> i32 {
+    let mut map: HashMap<char, usize> = HashMap::new();
+    let mut i = 0;
+    let mut res = 0;
+    for (j, c) in s.chars().enumerate() {
+        if let Some(prev_pos) = map.get(&c) {
+            i = i.max(prev_pos + 1);
+        }
+        res = res.max(j - i + 1);
+        map.insert(c, j);
+    }
+    res as i32
 }
 
 #[cfg(test)]
