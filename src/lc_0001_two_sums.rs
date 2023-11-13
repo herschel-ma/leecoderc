@@ -1,10 +1,25 @@
-pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+use std::collections::HashMap;
+
+#[allow(dead_code)]
+pub fn two_sum_old(nums: Vec<i32>, target: i32) -> Vec<i32> {
     for i in 0..nums.len() - 1 {
         for j in i + 1..nums.len() {
             if nums[i] + nums[j] == target {
                 return vec![i as i32, j as i32];
             }
         }
+    }
+    Vec::new()
+}
+
+pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    let mut idx: HashMap<i32, usize> = HashMap::new();
+    for (i, num) in nums.iter().enumerate() {
+        let diff = target - num;
+        if let Some(&j) = idx.get(&diff) {
+            return vec![j as i32, i as i32];
+        }
+        idx.insert(*num, i);
     }
     Vec::new()
 }
@@ -32,3 +47,4 @@ mod tests {
         assert_eq!(two_sum(list, 6), result);
     }
 }
+
