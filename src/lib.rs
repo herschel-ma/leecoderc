@@ -4,6 +4,9 @@ pub use utils::*;
 pub mod lc_0001_two_sums;
 pub use lc_0001_two_sums::*;
 
+pub mod lc_0002_add_two_numbers;
+pub use lc_0002_add_two_numbers::*;
+
 pub mod lc_0003_longest_substring_without_repeating_characters;
 pub use lc_0003_longest_substring_without_repeating_characters::*;
 
