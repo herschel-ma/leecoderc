@@ -87,4 +87,3 @@ mod tests {
         assert_eq!(add_two_numbers(l1, l2), ListNode::from_vec(&output));
     }
 }
-
