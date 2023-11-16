@@ -65,4 +65,3 @@ mod tests {
         assert_eq!(find_median_sorted_arrays(nums1, nums2), output);
     }
 }
-

@@ -13,6 +13,9 @@ pub use lc_0003_longest_substring_without_repeating_characters::*;
 pub mod lc_0004_median_of_two_sorted_arrays;
 pub use lc_0004_median_of_two_sorted_arrays::*;
 
+pub mod lc_0005_longest_palindromic_substring;
+pub use lc_0005_longest_palindromic_substring::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
