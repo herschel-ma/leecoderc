@@ -1,4 +1,4 @@
-pub fn reverse(x: i32) -> i32 {
+pub fn reverse_v1(x: i32) -> i32 {
     let is_minus = x < 0;
     match x
         .abs()
@@ -11,6 +11,20 @@ pub fn reverse(x: i32) -> i32 {
         Ok(x) => x * (if is_minus { -1 } else { 1 }),
         Err(_) => 0,
     }
+}
+
+pub fn reverse(x: i32) -> i32 {
+    let mut x = x;
+    let mut ret: i32 = 0;
+    while x != 0 {
+        let d: i32 = x % 10;
+        x = x / 10;
+        match ret.checked_mul(10).and_then(|x| x.checked_add(d)) {
+            Some(val) => ret = val,
+            None => return 0,
+        }
+    }
+    ret
 }
 
 #[cfg(test)]
