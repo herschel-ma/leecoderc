@@ -19,6 +19,9 @@ pub use lc_0005_longest_palindromic_substring::*;
 pub mod lc_0007_reverse_integer;
 pub use lc_0007_reverse_integer::*;
 
+pub mod lc_0009_palindrome_number;
+pub use lc_0009_palindrome_number::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
