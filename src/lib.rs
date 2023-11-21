@@ -16,6 +16,9 @@ pub use lc_0004_median_of_two_sorted_arrays::*;
 pub mod lc_0005_longest_palindromic_substring;
 pub use lc_0005_longest_palindromic_substring::*;
 
+pub mod lc_0007_reverse_integer;
+pub use lc_0007_reverse_integer::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
