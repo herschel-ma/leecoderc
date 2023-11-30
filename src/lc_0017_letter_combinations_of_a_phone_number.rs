@@ -54,4 +54,3 @@ mod tests {
         assert_eq!(letter_combinations(digits), output)
     }
 }
-
