@@ -22,6 +22,9 @@ pub use lc_0007_reverse_integer::*;
 pub mod lc_0009_palindrome_number;
 pub use lc_0009_palindrome_number::*;
 
+pub mod lc_0011_container_with_most_water;
+pub use lc_0011_container_with_most_water::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
