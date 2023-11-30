@@ -33,4 +33,3 @@ mod tests {
         assert_eq!(int_to_roman(num), output);
     }
 }
-

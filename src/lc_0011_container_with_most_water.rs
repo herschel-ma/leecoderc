@@ -31,4 +31,3 @@ mod tests {
         assert_eq!(max_area(height), res);
     }
 }
-

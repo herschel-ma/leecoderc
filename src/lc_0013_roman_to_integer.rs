@@ -52,4 +52,3 @@ mod tests {
         assert_eq!(roman_to_int(s), output)
     }
 }
-
