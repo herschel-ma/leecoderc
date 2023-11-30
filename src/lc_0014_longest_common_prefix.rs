@@ -31,4 +31,3 @@ mod tests {
         assert_eq!(longest_common_prefix(strs), output);
     }
 }
-
