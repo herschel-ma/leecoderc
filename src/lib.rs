@@ -43,6 +43,9 @@ pub use lc_0016_three_sum_closest::*;
 pub mod lc_0017_letter_combinations_of_a_phone_number;
 pub use lc_0017_letter_combinations_of_a_phone_number::*;
 
+pub mod lc_0018_four_sum;
+pub use lc_0018_four_sum::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
