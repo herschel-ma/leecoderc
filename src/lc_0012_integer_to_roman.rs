@@ -12,7 +12,7 @@ pub fn int_to_roman(num: i32) -> String {
             num -= v;
         }
     }
-    ans.iter().map(|c| c.chars()).flatten().collect()
+    ans.iter().flat_map(|ch| ch.chars()).collect()
 }
 
 #[cfg(test)]

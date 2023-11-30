@@ -28,6 +28,9 @@ pub use lc_0011_container_with_most_water::*;
 pub mod lc_0012_integer_to_roman;
 pub use lc_0012_integer_to_roman::*;
 
+pub mod lc_0013_roman_to_integer;
+pub use lc_0013_roman_to_integer::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
