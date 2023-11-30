@@ -31,6 +31,9 @@ pub use lc_0012_integer_to_roman::*;
 pub mod lc_0013_roman_to_integer;
 pub use lc_0013_roman_to_integer::*;
 
+pub mod lc_0014_longest_common_prefix;
+pub use lc_0014_longest_common_prefix::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
