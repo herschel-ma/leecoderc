@@ -35,4 +35,3 @@ mod tests {
         assert_eq!(remove_nth_from_end(head, n), output)
     }
 }
-
