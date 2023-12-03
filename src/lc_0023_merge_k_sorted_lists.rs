@@ -56,4 +56,3 @@ mod tests {
         assert_eq!(merge_k_lists(lists), output)
     }
 }
-
