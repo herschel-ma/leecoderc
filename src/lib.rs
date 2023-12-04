@@ -70,6 +70,9 @@ pub use lc_0025_reverse_nodes_in_k_group::*;
 pub mod lc_0026_remove_duplicates_from_sorted_array;
 pub use lc_0026_remove_duplicates_from_sorted_array::*;
 
+pub mod lc_0027_remove_element;
+pub use lc_0027_remove_element::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
