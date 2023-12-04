@@ -56,7 +56,7 @@ pub fn reverse_k_group(mut head: Option<Box<ListNode>>, k: i32) -> Option<Box<Li
         head = next;
     }
 
-    return new_head;
+    new_head
 }
 
 #[allow(dead_code)]
