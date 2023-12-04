@@ -1,6 +1,6 @@
 use crate::ListNode;
 
-pub fn reverse_k_group(head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
+pub fn reverse_k_group_1(head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
     fn reverse(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut head = head;
         let mut pre = None;
@@ -34,6 +34,29 @@ pub fn reverse_k_group(head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNo
         cur = b
     }
     dummy.unwrap().next
+}
+
+pub fn reverse_k_group(mut head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
+    let mut new_group_head = &mut head;
+    // 查看剩余部分长度是否大于等于 k
+    for _ in 0..k {
+        if new_group_head.is_none() {
+            return head;
+        }
+        new_group_head = &mut new_group_head.as_mut().unwrap().next;
+    }
+    // 递归翻转后面
+    let mut new_head = reverse_k_group(new_group_head.take(), k);
+    // 将前半部分逐个拼到 new_head (已经翻转好的后半部分) 的前面
+    while head.is_some() {
+        let node = head.as_mut().unwrap();
+        let next = node.next.take();
+        node.next = new_head.take();
+        new_head = head;
+        head = next;
+    }
+
+    return new_head;
 }
 
 #[allow(dead_code)]
