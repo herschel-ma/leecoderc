@@ -73,6 +73,9 @@ pub use lc_0026_remove_duplicates_from_sorted_array::*;
 pub mod lc_0027_remove_element;
 pub use lc_0027_remove_element::*;
 
+pub mod lc_0028_find_index_of_the_first_occurrence_in_a_string;
+pub use lc_0028_find_index_of_the_first_occurrence_in_a_string::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
