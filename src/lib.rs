@@ -82,6 +82,9 @@ pub use lc_0029_divide_two_integers::*;
 pub mod lc_0030_substring_with_concatenation_of_all_words;
 pub use lc_0030_substring_with_concatenation_of_all_words::*;
 
+pub mod lc_0031_next_permutation;
+pub use lc_0031_next_permutation::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
