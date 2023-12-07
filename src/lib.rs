@@ -79,6 +79,9 @@ pub use lc_0028_find_index_of_the_first_occurrence_in_a_string::*;
 pub mod lc_0029_divide_two_integers;
 pub use lc_0029_divide_two_integers::*;
 
+pub mod lc_0030_substring_with_concatenation_of_all_words;
+pub use lc_0030_substring_with_concatenation_of_all_words::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
