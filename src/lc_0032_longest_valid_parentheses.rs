@@ -137,4 +137,3 @@ mod tests {
         assert_eq!(longest_valid_parentheses(s), res)
     }
 }
-

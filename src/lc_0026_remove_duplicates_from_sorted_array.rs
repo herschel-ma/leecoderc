@@ -31,4 +31,3 @@ mod tests {
         assert_eq!(nums[..output as usize], res)
     }
 }
-

@@ -40,4 +40,3 @@ mod tests {
         assert_eq!(swap_pairs(head), output)
     }
 }
-
