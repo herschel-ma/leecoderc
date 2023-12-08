@@ -1,4 +1,5 @@
-pub fn longest_valid_parentheses(s: String) -> i32 {
+use std::cmp::Ordering;
+
 pub fn longest_valid_parentheses_stack(s: String) -> i32 {
     let mut stack = vec![-1];
     let mut res = 0;
@@ -17,10 +18,11 @@ pub fn longest_valid_parentheses_stack(s: String) -> i32 {
     res
 }
 
-pub fn longest_valid_parentheses(s: String) -> i32 {
+pub fn longest_valid_parentheses_dp(s: String) -> i32 {
     // ()(())
     let mut max_length = 0;
     let mut dp = vec![0; s.len()];
+
     for i in 1..s.len() {
         if s.chars().nth(i).unwrap() == ')' {
             if s.chars().nth(i - 1).unwrap() == '(' {
@@ -37,6 +39,48 @@ pub fn longest_valid_parentheses(s: String) -> i32 {
                     };
             }
             max_length = max_length.max(dp[i]);
+        }
+    }
+    max_length
+}
+
+pub fn longest_valid_parentheses(s: String) -> i32 {
+    let mut max_length = 0;
+    // 从左往右扫描
+    let mut left = 0;
+    let mut right = 0;
+    for c in s.chars() {
+        if c == '(' {
+            left += 1;
+        } else {
+            right += 1;
+            match right.cmp(&left) {
+                Ordering::Equal => max_length = max_length.max(2 * right),
+                Ordering::Greater => {
+                    left = 0;
+                    right = 0
+                }
+                Ordering::Less => continue,
+            }
+        }
+    }
+
+    // 从右往左扫描
+    let mut left = 0;
+    let mut right = 0;
+    for c in s.chars().rev() {
+        if c == ')' {
+            right += 1;
+        } else {
+            left += 1;
+            match left.cmp(&right) {
+                Ordering::Equal => max_length = max_length.max(2 * left),
+                Ordering::Greater => {
+                    left = 0;
+                    right = 0;
+                }
+                Ordering::Less => continue,
+            }
         }
     }
     max_length
@@ -64,6 +108,13 @@ mod tests {
     fn test_wrong_answer() {
         let s = String::new();
         let res = 0;
+        assert_eq!(longest_valid_parentheses(s), res)
+    }
+
+    #[test]
+    fn test_case_3() {
+        let s = String::from("()");
+        let res = 2;
         assert_eq!(longest_valid_parentheses(s), res)
     }
 }
