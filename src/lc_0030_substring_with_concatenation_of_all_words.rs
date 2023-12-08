@@ -86,4 +86,3 @@ mod tests {
         assert_eq!(find_substring(s, words), res)
     }
 }
-

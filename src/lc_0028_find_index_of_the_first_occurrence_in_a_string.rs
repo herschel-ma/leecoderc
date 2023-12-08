@@ -32,4 +32,3 @@ mod tests {
         assert_eq!(str_str(haystack, needle), output);
     }
 }
-
