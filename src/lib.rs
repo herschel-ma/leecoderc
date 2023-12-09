@@ -91,6 +91,9 @@ pub use lc_0032_longest_valid_parentheses::*;
 pub mod lc_0033_search_in_rotated_sorted_array;
 pub use lc_0033_search_in_rotated_sorted_array::*;
 
+pub mod lc_0034_find_first_and_last_position_of_element_in_sorted_array;
+pub use lc_0034_find_first_and_last_position_of_element_in_sorted_array::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 

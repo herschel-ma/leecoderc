@@ -59,4 +59,3 @@ mod tests {
         assert_eq!(search_other(nums, target), res);
     }
 }
-
