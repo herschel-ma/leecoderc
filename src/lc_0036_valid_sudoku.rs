@@ -63,4 +63,3 @@ mod tests {
         assert!(!is_valid_sudoku(convert_board(board)))
     }
 }
-

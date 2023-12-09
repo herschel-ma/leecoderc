@@ -100,6 +100,9 @@ pub use lc_0035_search_insert_position::*;
 pub mod lc_0036_valid_sudoku;
 pub use lc_0036_valid_sudoku::*;
 
+pub mod lc_0037_sudoku_solver;
+pub use lc_0037_sudoku_solver::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
