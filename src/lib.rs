@@ -88,6 +88,9 @@ pub use lc_0031_next_permutation::*;
 pub mod lc_0032_longest_valid_parentheses;
 pub use lc_0032_longest_valid_parentheses::*;
 
+pub mod lc_0033_search_in_rotated_sorted_array;
+pub use lc_0033_search_in_rotated_sorted_array::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
