@@ -97,6 +97,9 @@ pub use lc_0034_find_first_and_last_position_of_element_in_sorted_array::*;
 pub mod lc_0035_search_insert_position;
 pub use lc_0035_search_insert_position::*;
 
+pub mod lc_0036_valid_sudoku;
+pub use lc_0036_valid_sudoku::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
