@@ -1,15 +1,15 @@
+use std::cmp::Ordering;
+
 pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
     let n = nums.len();
     let mut left = 0;
     let mut right = n;
     while left < right {
         let mid = (left + right) >> 1;
-        if nums[mid] < target {
-            left = mid + 1;
-        } else if nums[mid] > target {
-            right = mid;
-        } else {
-            return mid as i32;
+        match nums[mid].cmp(&target) {
+            Ordering::Less => left = mid + 1,
+            Ordering::Greater => right = mid,
+            Ordering::Equal => return mid as i32,
         }
     }
     left as i32
@@ -51,4 +51,3 @@ mod tests {
         assert_eq!(search_insert(nums, target), output)
     }
 }
-
