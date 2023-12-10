@@ -103,6 +103,9 @@ pub use lc_0036_valid_sudoku::*;
 pub mod lc_0037_sudoku_solver;
 pub use lc_0037_sudoku_solver::*;
 
+pub mod lc_0038_count_and_say;
+pub use lc_0038_count_and_say::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
