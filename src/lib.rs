@@ -109,6 +109,9 @@ pub use lc_0038_count_and_say::*;
 pub mod lc_0039_combination_sum;
 pub use lc_0039_combination_sum::*;
 
+pub mod lc_0040_combination_sum_ii;
+pub use lc_0040_combination_sum_ii::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
