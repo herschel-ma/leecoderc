@@ -112,6 +112,9 @@ pub use lc_0039_combination_sum::*;
 pub mod lc_0040_combination_sum_ii;
 pub use lc_0040_combination_sum_ii::*;
 
+pub mod lc_0041_first_missing_positive;
+pub use lc_0041_first_missing_positive::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
