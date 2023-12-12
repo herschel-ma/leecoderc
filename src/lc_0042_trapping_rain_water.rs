@@ -35,4 +35,3 @@ mod tests {
         assert_eq!(trap(height), output);
     }
 }
-
