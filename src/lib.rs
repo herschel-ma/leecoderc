@@ -121,6 +121,9 @@ pub use lc_0042_trapping_rain_water::*;
 pub mod lc_0043_multiply_strings;
 pub use lc_0043_multiply_strings::*;
 
+pub mod lc_0044_wildcard_matching;
+pub use lc_0044_wildcard_matching::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
