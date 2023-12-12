@@ -142,6 +142,9 @@ pub use lc_0057_inert_interval::*;
 pub mod lc_0061_rotate_list;
 pub use lc_0061_rotate_list::*;
 
+pub mod lc_0062_unique_paths;
+pub use lc_0062_unique_paths::*;
+
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 
