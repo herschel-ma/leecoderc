@@ -127,6 +127,9 @@ pub use lc_0044_wildcard_matching::*;
 pub mod lc_0045_jump_game_ii;
 pub use lc_0045_jump_game_ii::*;
 
+pub mod lc_0046_permutations;
+pub use lc_0046_permutations::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
