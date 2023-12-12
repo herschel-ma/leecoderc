@@ -1,4 +1,4 @@
-pub fn multiply(num1: String, num2: String) -> String {
+pub fn multiply_o(num1: String, num2: String) -> String {
     let sz1 = num1.len();
     let sz2 = num2.len();
     let mut ret: Vec<u32> = vec![0; sz1 + sz2];
@@ -29,6 +29,27 @@ pub fn multiply(num1: String, num2: String) -> String {
     }
 
     ret.into_iter()
+        .rev()
+        .map(|d| std::char::from_digit(d, 10).unwrap())
+        .collect()
+}
+pub fn multiply(num1: String, num2: String) -> String {
+    let mut ans = vec![0; num1.len() + num2.len()];
+    for (i, ch1) in num1.chars().rev().peekable().enumerate() {
+        for (j, ch2) in num2.chars().rev().peekable().enumerate() {
+            let a = ch1.to_digit(10).unwrap();
+            let b = ch2.to_digit(10).unwrap();
+
+            let low = (a * b + ans[i + j]) % 10;
+            let high = (a * b + ans[i + j]) / 10;
+            ans[i + j] = low;
+            ans[i + j + 1] += high;
+        }
+    }
+    while ans.len() > 1 && ans.last() == Some(&0) {
+        ans.pop();
+    }
+    ans.into_iter()
         .rev()
         .map(|d| std::char::from_digit(d, 10).unwrap())
         .collect()
