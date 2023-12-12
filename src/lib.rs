@@ -145,6 +145,9 @@ pub use lc_0061_rotate_list::*;
 pub mod lc_0062_unique_paths;
 pub use lc_0062_unique_paths::*;
 
+pub mod lc_0063_unique_paths_ii;
+pub use lc_0063_unique_paths_ii::*;
+
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 
