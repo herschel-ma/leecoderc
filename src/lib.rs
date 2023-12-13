@@ -133,6 +133,9 @@ pub use lc_0046_permutations::*;
 pub mod lc_0047_permutations_ii;
 pub use lc_0047_permutations_ii::*;
 
+pub mod lc_0048_rotate_image;
+pub use lc_0048_rotate_image::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
