@@ -50,4 +50,3 @@ mod tests {
         assert_eq!(group_anagrams(strs).len(), output.len());
     }
 }
-
