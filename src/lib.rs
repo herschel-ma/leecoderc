@@ -142,6 +142,9 @@ pub use lc_0049_group_anagrams::*;
 pub mod lc_0050_pow;
 pub use lc_0050_pow::*;
 
+pub mod lc_0051_n_queens;
+pub use lc_0051_n_queens::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
