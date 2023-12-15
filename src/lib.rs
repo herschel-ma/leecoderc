@@ -151,6 +151,8 @@ pub use lc_0052_n_queens_ii::*;
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
+pub mod lc_0054_spiral_matrix;
+
 pub mod lc_0057_inert_interval;
 pub use lc_0057_inert_interval::*;
 
