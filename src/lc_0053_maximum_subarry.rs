@@ -1,4 +1,4 @@
-pub fn max_sub_array(nums: Vec<i32>) -> i32 {
+pub fn max_sub_array_1(nums: Vec<i32>) -> i32 {
     if nums.len() == 1 {
         return nums[0];
     }
@@ -14,6 +14,16 @@ pub fn max_sub_array(nums: Vec<i32>) -> i32 {
         res = res.max(dp[i])
     }
     res
+}
+
+pub fn max_sub_array(nums: Vec<i32>) -> i32 {
+    let mut ans = nums[0];
+    let mut f = nums[0];
+    for (_, v) in nums.iter().skip(1).enumerate() {
+        f = f.max(0) + v;
+        ans = ans.max(f);
+    }
+    ans
 }
 
 #[cfg(test)]
