@@ -153,6 +153,8 @@ pub use lc_0053_maximum_subarry::*;
 
 pub mod lc_0054_spiral_matrix;
 
+pub mod lc_0055_jump_game;
+
 pub mod lc_0057_inert_interval;
 pub use lc_0057_inert_interval::*;
 
