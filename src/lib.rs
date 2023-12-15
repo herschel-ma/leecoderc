@@ -145,6 +145,9 @@ pub use lc_0050_pow::*;
 pub mod lc_0051_n_queens;
 pub use lc_0051_n_queens::*;
 
+pub mod lc_0052_n_queens_ii;
+pub use lc_0052_n_queens_ii::*;
+
 pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
