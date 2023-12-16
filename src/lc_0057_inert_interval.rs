@@ -1,4 +1,4 @@
-pub fn insert(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>> {
+pub fn insert_1(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>> {
     let mut result = Vec::new();
     let mut to_insert = new_interval;
     let mut pushed = false;
@@ -26,10 +26,30 @@ pub fn insert(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>>
     result
 }
 
+pub fn insert(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>> {
+    let mut result = Vec::new();
+    let mut new_interval = new_interval;
+    for interval in intervals {
+        // 如果新区间完全在当前区间之前，将新区间加入到 result，并更新新区间为当前区间
+        if interval[0] > new_interval[1] {
+            result.push(new_interval);
+            new_interval = interval;
+        // 如果当前区间在新区间之前，将当前区间加入 result
+        } else if interval[1] < new_interval[0] {
+            result.push(interval)
+        // 如果当前区间和新区间有重叠
+        } else {
+            new_interval[0] = interval[0].min(new_interval[0]);
+            new_interval[1] = interval[1].max(new_interval[1]);
+        }
+    }
+
+    result.push(new_interval);
+    result
+}
+
 #[cfg(test)]
 mod tests {
-    use std::vec;
-
     use super::*;
 
     #[test]
@@ -59,6 +79,6 @@ mod tests {
 
     #[test]
     fn ex3() {
-        assert_eq!(insert(vec![vec![]], vec![5, 7]), vec![vec![5, 7]])
+        assert_eq!(insert(vec![], vec![5, 7]), vec![vec![5, 7]])
     }
 }
