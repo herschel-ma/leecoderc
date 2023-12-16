@@ -164,6 +164,8 @@ pub mod lc_0058_length_of_last_word;
 
 pub mod lc_0059_spiral_matrix_ii;
 
+pub mod lc_0060_permutation_sequence;
+
 pub mod lc_0061_rotate_list;
 pub use lc_0061_rotate_list::*;
 
