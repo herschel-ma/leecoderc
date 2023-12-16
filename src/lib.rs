@@ -160,6 +160,8 @@ pub mod lc_0056_merge_intervals;
 pub mod lc_0057_inert_interval;
 pub use lc_0057_inert_interval::*;
 
+pub mod lc_0058_length_of_last_word;
+
 pub mod lc_0061_rotate_list;
 pub use lc_0061_rotate_list::*;
 
