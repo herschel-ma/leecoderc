@@ -178,6 +178,8 @@ pub use lc_0063_unique_paths_ii::*;
 pub mod lc_0064_minimum_path_sum;
 pub use lc_0064_minimum_path_sum::*;
 
+pub mod lc_0065_valid_number;
+
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 

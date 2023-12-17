@@ -61,7 +61,7 @@ mod tests {
     fn test_case2() {
         let nums1 = vec![1, 2];
         let nums2 = vec![3, 4];
-        let output = 2.50_000;
+        let output = 2.500_00;
         assert_eq!(find_median_sorted_arrays(nums1, nums2), output);
     }
 }

@@ -18,10 +18,10 @@ mod tests {
         let mut nums = vec![3, 2, 2, 3];
         let val = 3;
         let output = 2;
-        let res = vec![2, 2];
+        let res = [2, 2];
         assert_eq!(remove_element(&mut nums, val), output);
         for ele in res.iter() {
-            assert!(nums[..output as usize].contains(&ele))
+            assert!(nums[..output as usize].contains(ele))
         }
     }
 
@@ -30,10 +30,10 @@ mod tests {
         let mut nums = vec![0, 1, 2, 2, 3, 0, 4, 2];
         let val = 2;
         let output = 5;
-        let res = vec![0, 1, 4, 0, 3];
+        let res = [0, 1, 4, 0, 3];
         assert_eq!(remove_element(&mut nums, val), output);
         for ele in res.iter() {
-            assert!(nums[..output as usize].contains(&ele));
+            assert!(nums[..output as usize].contains(ele));
         }
     }
 }
