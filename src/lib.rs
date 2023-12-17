@@ -180,6 +180,8 @@ pub use lc_0064_minimum_path_sum::*;
 
 pub mod lc_0065_valid_number;
 
+pub mod lc_0066_plus_one;
+
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 
