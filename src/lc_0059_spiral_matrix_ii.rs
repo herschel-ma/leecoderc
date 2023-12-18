@@ -39,4 +39,3 @@ mod tests {
         assert_eq!(Solution::generate_matrix(n), output);
     }
 }
-

@@ -33,4 +33,3 @@ mod tests {
         assert_eq!(Solution::length_of_last_word(s), res);
     }
 }
-

@@ -102,4 +102,3 @@ mod tests {
         assert!(!Solution::is_number(s));
     }
 }
-

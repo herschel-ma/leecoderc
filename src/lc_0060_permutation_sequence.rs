@@ -76,4 +76,3 @@ mod tests {
         assert_eq!(Solution::get_permutation(n, k), "123");
     }
 }
-
