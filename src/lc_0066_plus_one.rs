@@ -42,4 +42,3 @@ mod tests {
         assert_eq!(Solution::plus_one(digits), output);
     }
 }
-
