@@ -185,6 +185,8 @@ pub mod lc_0066_plus_one;
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 
+pub mod lc_0068_text_justification;
+
 pub mod lc_0070_climbing_stairs;
 pub use lc_0070_climbing_stairs::*;
 

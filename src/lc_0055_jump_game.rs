@@ -28,4 +28,3 @@ mod tests {
         assert!(!Solution::can_jump(nums));
     }
 }
-

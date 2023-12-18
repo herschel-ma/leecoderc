@@ -1,5 +1,4 @@
 use crate::Solution;
-use std::cmp::Ordering;
 
 impl Solution {
     pub fn add_binary_1(a: String, b: String) -> String {
