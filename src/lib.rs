@@ -196,6 +196,8 @@ pub mod lc_0071_simplify_path;
 
 pub mod lc_0072_edit_distance;
 
+pub mod lc_0073_set_matrix_zeroes;
+
 pub mod lc_0075_sort_colors;
 pub use lc_0075_sort_colors::*;
 
