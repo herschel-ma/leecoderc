@@ -5,6 +5,9 @@ pub fn climb_stairs(n: i32) -> i32 {
     let mut f1 = 2;
     let mut f2 = 3;
     let mut re = 0;
+    // need return how many **ways** to reach top with n steps
+    // so f(n) = f(n-2) + f(n-1)
+    // because of you can forword 1 or 2 steps.
     for _i in 4..=n {
         re = f1 + f2;
         f1 = f2;
