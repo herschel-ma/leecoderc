@@ -37,4 +37,3 @@ mod tests {
         assert_eq!(Solution::my_sqrt(x), 2);
     }
 }
-
