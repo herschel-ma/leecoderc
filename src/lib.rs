@@ -198,6 +198,8 @@ pub mod lc_0072_edit_distance;
 
 pub mod lc_0073_set_matrix_zeroes;
 
+pub mod lc_0074_search_a_2d_matrix;
+
 pub mod lc_0075_sort_colors;
 pub use lc_0075_sort_colors::*;
 
