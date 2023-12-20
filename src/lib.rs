@@ -203,6 +203,8 @@ pub mod lc_0074_search_a_2d_matrix;
 pub mod lc_0075_sort_colors;
 pub use lc_0075_sort_colors::*;
 
+pub mod lc_0076_minimum_window_substring;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
