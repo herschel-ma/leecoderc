@@ -209,6 +209,8 @@ pub mod lc_0077_combinations;
 
 pub mod lc_0078_subsets;
 
+pub mod lc_0079_word_search;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
