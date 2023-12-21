@@ -5,22 +5,22 @@ impl Solution {
         let mut res: Vec<Vec<i32>> = Vec::new();
         let mut cur: Vec<i32> = Vec::new();
 
-        Self::dfs(1, &mut cur, &mut res, n, k);
-        res
-    }
+        fn dfs(i: i32, cur: &mut Vec<i32>, res: &mut Vec<Vec<i32>>, n: i32, k: i32) {
+            if cur.len() == k as usize {
+                res.push(cur.clone());
+            }
+            if i > n {
+                return;
+            }
+            for j in i..=n {
+                cur.push(j);
+                dfs(j + 1, cur, res, n, k);
+                cur.pop();
+            }
+        }
 
-    fn dfs(i: i32, cur: &mut Vec<i32>, res: &mut Vec<Vec<i32>>, n: i32, k: i32) {
-        if cur.len() == k as usize {
-            res.push(cur.clone());
-        }
-        if i > n {
-            return;
-        }
-        for j in i..=n {
-            cur.push(j);
-            Self::dfs(j + 1, cur, res, n, k);
-            cur.pop();
-        }
+        dfs(1, &mut cur, &mut res, n, k);
+        res
     }
 }
 
@@ -51,4 +51,3 @@ mod tests {
         assert_eq!(Solution::combine(n, k), res);
     }
 }
-
