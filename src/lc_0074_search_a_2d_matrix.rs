@@ -34,4 +34,3 @@ mod tests {
         assert!(!Solution::search_matrix(matrix, 13));
     }
 }
-

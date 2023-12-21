@@ -59,4 +59,3 @@ mod tests {
         assert_eq!(Solution::min_window(s, t), "");
     }
 }
-
