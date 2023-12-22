@@ -152,19 +152,25 @@ pub mod lc_0053_maximum_subarry;
 pub use lc_0053_maximum_subarry::*;
 
 pub mod lc_0054_spiral_matrix;
+pub use lc_0054_spiral_matrix::*;
 
 pub mod lc_0055_jump_game;
+pub use lc_0054_spiral_matrix::*;
 
 pub mod lc_0056_merge_intervals;
+pub use lc_0054_spiral_matrix::*;
 
 pub mod lc_0057_inert_interval;
 pub use lc_0057_inert_interval::*;
 
 pub mod lc_0058_length_of_last_word;
+pub use lc_0058_length_of_last_word::*;
 
 pub mod lc_0059_spiral_matrix_ii;
+pub use lc_0059_spiral_matrix_ii::*;
 
 pub mod lc_0060_permutation_sequence;
+pub use lc_0060_permutation_sequence::*;
 
 pub mod lc_0061_rotate_list;
 pub use lc_0061_rotate_list::*;
@@ -179,39 +185,52 @@ pub mod lc_0064_minimum_path_sum;
 pub use lc_0064_minimum_path_sum::*;
 
 pub mod lc_0065_valid_number;
+pub use lc_0065_valid_number::*;
 
 pub mod lc_0066_plus_one;
+pub use lc_0066_plus_one::*;
 
 pub mod lc_0067_add_binary;
 pub use lc_0067_add_binary::*;
 
 pub mod lc_0068_text_justification;
+pub use lc_0068_text_justification::*;
 
 pub mod lc_0069_sqrtx;
+pub use lc_0069_sqrtx::*;
 
 pub mod lc_0070_climbing_stairs;
 pub use lc_0070_climbing_stairs::*;
 
 pub mod lc_0071_simplify_path;
+pub use lc_0071_simplify_path::*;
 
 pub mod lc_0072_edit_distance;
+pub use lc_0072_edit_distance::*;
 
 pub mod lc_0073_set_matrix_zeroes;
+pub use lc_0073_set_matrix_zeroes::*;
 
 pub mod lc_0074_search_a_2d_matrix;
+pub use lc_0074_search_a_2d_matrix::*;
 
 pub mod lc_0075_sort_colors;
 pub use lc_0075_sort_colors::*;
 
 pub mod lc_0076_minimum_window_substring;
+pub use lc_0076_minimum_window_substring::*;
 
 pub mod lc_0077_combinations;
+pub use lc_0077_combinations::*;
 
 pub mod lc_0078_subsets;
+pub use lc_0078_subsets::*;
 
 pub mod lc_0079_word_search;
+pub use lc_0079_word_search::*;
 
 pub mod lc_0080_remove_duplicates_from_sorted_array;
+pub use lc_0080_remove_duplicates_from_sorted_array::*;
 
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;

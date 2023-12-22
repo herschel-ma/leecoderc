@@ -1,6 +1,5 @@
-pub struct Solution {
-    bad_version: i32,
-}
+use crate::Solution;
+
 // The API isBadVersion is defined for you.
 // isBadVersion(version:i32)-> bool;
 // to call it use self.isBadVersion(version)
@@ -29,10 +28,6 @@ impl Solution {
     #[allow(non_snake_case)]
     fn isBadVersion(&self, n: i32) -> bool {
         self.bad_version <= n
-    }
-
-    pub fn new(bad_version: i32) -> Self {
-        Self { bad_version }
     }
 }
 

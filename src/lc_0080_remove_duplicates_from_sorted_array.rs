@@ -63,4 +63,3 @@ mod tests {
         assert_eq!(Solution::remove_duplicates(&mut nums), output);
     }
 }
-
