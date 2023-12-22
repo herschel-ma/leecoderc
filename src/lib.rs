@@ -238,6 +238,9 @@ pub use lc_0081_search_in_rotated_sorted_array_ii::*;
 pub mod lc_0082_remove_duplicates_from_sort_array;
 pub use lc_0082_remove_duplicates_from_sort_array::*;
 
+pub mod lc_0083_remove_duplicates_from_sorted_list;
+pub use lc_0083_remove_duplicates_from_sorted_list::*;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
