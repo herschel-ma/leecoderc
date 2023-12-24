@@ -36,4 +36,3 @@ mod tests {
         assert_eq!(Solution::delete_duplicates_(head), res);
     }
 }
-

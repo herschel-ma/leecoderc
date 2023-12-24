@@ -38,4 +38,3 @@ mod tests {
         assert_eq!(Solution::delete_duplicates(head), output);
     }
 }
-
