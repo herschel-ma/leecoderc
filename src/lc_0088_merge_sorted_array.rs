@@ -58,4 +58,3 @@ mod tests {
         assert_eq!(nums1, vec![1]);
     }
 }
-
