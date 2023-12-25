@@ -244,6 +244,9 @@ pub use lc_0083_remove_duplicates_from_sorted_list::*;
 pub mod lc_0084_largest_rectangle_in_histogram;
 pub use lc_0084_largest_rectangle_in_histogram::*;
 
+pub mod lc_0085_maximal_rectangle;
+pub use lc_0085_maximal_rectangle::*;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
