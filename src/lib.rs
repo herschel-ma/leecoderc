@@ -259,6 +259,9 @@ pub use lc_0088_merge_sorted_array::*;
 pub mod lc_0089_gray_code;
 pub use lc_0089_gray_code::*;
 
+pub mod lc_0090_subsets_ii;
+pub use lc_0090_subsets_ii::*;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
