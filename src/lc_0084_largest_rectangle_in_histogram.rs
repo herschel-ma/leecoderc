@@ -87,4 +87,3 @@ mod tests {
         assert_eq!(4, Solution::largest_rectangle_area(heights));
     }
 }
-

@@ -66,4 +66,3 @@ mod tests {
         assert_eq!(Solution::maximal_rectangle(matrix), 1);
     }
 }
-

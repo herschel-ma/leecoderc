@@ -247,6 +247,9 @@ pub use lc_0084_largest_rectangle_in_histogram::*;
 pub mod lc_0085_maximal_rectangle;
 pub use lc_0085_maximal_rectangle::*;
 
+pub mod lc_0086_partition_list;
+pub use lc_0086_partition_list::*;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
