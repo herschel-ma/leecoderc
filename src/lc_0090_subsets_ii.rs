@@ -5,20 +5,21 @@ impl Solution {
         let mut nums = nums;
         nums.sort();
         let mut res = vec![];
-        fn dfs(i: usize, res: &mut Vec<Vec<i32>>, nums: &[i32], buf: &mut Vec<i32>) {
+
+        fn helper(i: usize, res: &mut Vec<Vec<i32>>, nums: &[i32], buf: &mut Vec<i32>) {
+            res.push(buf.clone());
+
             for j in i..nums.len() {
-                buf.push(nums[j]);
-                if !res.contains(&buf.clone()) {
-                    res.push(buf.clone());
+                if j > i && nums[j] == nums[j - 1] {
+                    continue;
                 }
-                dfs(j + 1, res, nums, buf);
+                buf.push(nums[j]);
+                helper(j + 1, res, nums, buf);
                 buf.pop();
             }
         }
 
-        dfs(0, &mut res, &nums, &mut vec![]);
-
-        res.insert(0, vec![]);
+        helper(0, &mut res, &nums, &mut vec![]);
         res
     }
 }
