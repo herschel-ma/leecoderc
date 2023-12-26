@@ -268,6 +268,9 @@ pub use lc_0091_decode_ways::*;
 pub mod lc_0092_reverse_linked_list_ii;
 pub use lc_0092_reverse_linked_list_ii::*;
 
+pub mod lc_0093_restore_ip_addresses;
+pub use lc_0093_restore_ip_addresses::*;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
