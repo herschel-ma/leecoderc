@@ -47,4 +47,3 @@ mod tests {
         assert_eq!(Solution::num_decodings(s), 0);
     }
 }
-
