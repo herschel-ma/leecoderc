@@ -43,4 +43,3 @@ mod tests {
         assert_eq!(Solution::inorder_traversal(root), vec![1]);
     }
 }
-
