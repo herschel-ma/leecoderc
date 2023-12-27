@@ -277,6 +277,9 @@ pub use lc_0094_binary_tree_inorder_traversal::*;
 pub mod lc_0095_unique_binary_search_trees_ii;
 pub use lc_0095_unique_binary_search_trees_ii::*;
 
+pub mod lc_0096_unique_binary_search_trees;
+pub use lc_0096_unique_binary_search_trees::*;
+
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
