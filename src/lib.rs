@@ -295,6 +295,9 @@ pub use lc_0100_same_tree::*;
 pub mod lc_0104_maximum_depth_of_binary_tree;
 pub use lc_0104_maximum_depth_of_binary_tree::*;
 
+pub mod lc_0108_convert_sorted_array_to_binary_search_tree;
+pub use lc_0108_convert_sorted_array_to_binary_search_tree::*;
+
 pub mod lc_0110_balanced_binary_tree;
 pub use lc_0110_balanced_binary_tree::*;
 
