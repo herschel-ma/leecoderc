@@ -367,6 +367,9 @@ pub use lc_0542_01_matrix::*;
 pub mod lc_0543_diameter_of_binary_tree;
 pub use lc_0543_diameter_of_binary_tree::*;
 
+pub mod lc_0703_kth_largest_element_in_a_stream;
+pub use lc_0703_kth_largest_element_in_a_stream::*;
+
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
 
