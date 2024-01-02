@@ -418,6 +418,9 @@ pub use lc_2265_count_nodes_equal_to_average_of_subtree::*;
 pub mod lc_2433_find_the_original_array_of_prefixes;
 pub use lc_2433_find_the_original_array_of_prefixes::*;
 
+pub mod lc_2610_convert_an_array_into_a_2d_array_with_conditions;
+pub use lc_2610_convert_an_array_into_a_2d_array_with_conditions::*;
+
 pub mod lc_2732_painting_the_walls;
 pub use lc_2732_painting_the_walls::*;
 
