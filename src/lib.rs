@@ -403,6 +403,9 @@ pub use lc_1535_find_the_winner_of_an_array_game::*;
 pub mod lc_1624_largest_substring_between_two_equal_chars;
 pub use lc_1624_largest_substring_between_two_equal_chars::*;
 
+pub mod lc_1658_minimum_operations_to_reduce_x_to_zero;
+pub use lc_1658_minimum_operations_to_reduce_x_to_zero::*;
+
 pub mod lc_1802_maximum_value_at_a_given_index_in_a_bounded_array;
 pub use lc_1802_maximum_value_at_a_given_index_in_a_bounded_array::*;
 
