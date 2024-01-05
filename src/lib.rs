@@ -346,6 +346,9 @@ pub use lc_0278_first_bad_version::*;
 pub mod lc_0295_find_median_from_data_stream;
 pub use lc_0295_find_median_from_data_stream::*;
 
+pub mod lc_0300_longest_increasing_subsequence;
+pub use lc_0300_longest_increasing_subsequence::*;
+
 pub mod lc_0383_ransom_note;
 pub use lc_0383_ransom_note::*;
 
