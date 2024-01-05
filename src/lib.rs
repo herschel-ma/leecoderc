@@ -358,6 +358,9 @@ pub use lc_0409_longest_palindrome::*;
 pub mod lc_0455_assign_cookies;
 pub use lc_0455_assign_cookies::*;
 
+pub mod lc_0458_poor_pig;
+pub use lc_0458_poor_pig::*;
+
 pub mod lc_0501_find_mode_in_binary_search_tree;
 pub use lc_0501_find_mode_in_binary_search_tree::*;
 
