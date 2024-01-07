@@ -355,6 +355,9 @@ pub use lc_0383_ransom_note::*;
 pub mod lc_0409_longest_palindrome;
 pub use lc_0409_longest_palindrome::*;
 
+pub mod lc_0446_arithmetic_slice_ii_subsequence;
+pub use lc_0446_arithmetic_slice_ii_subsequence::*;
+
 pub mod lc_0455_assign_cookies;
 pub use lc_0455_assign_cookies::*;
 
