@@ -313,6 +313,9 @@ pub use lc_0125_valid_palindrome::*;
 pub mod lc_0127_word_ladder;
 pub use lc_0127_word_ladder::*;
 
+pub mod lc_0128_longest_consecutive_sequence;
+pub use lc_0128_longest_consecutive_sequence::*;
+
 pub mod lc_0141_linked_list_cycle;
 pub use lc_0141_linked_list_cycle::*;
 
