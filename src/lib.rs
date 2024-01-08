@@ -376,6 +376,9 @@ pub use lc_0542_01_matrix::*;
 pub mod lc_0543_diameter_of_binary_tree;
 pub use lc_0543_diameter_of_binary_tree::*;
 
+pub mod lc_0691_stickers_to_spell_word;
+pub use lc_0691_stickers_to_spell_word::*;
+
 pub mod lc_0703_kth_largest_element_in_a_stream;
 pub use lc_0703_kth_largest_element_in_a_stream::*;
 
@@ -388,8 +391,8 @@ pub use lc_0733_flood_fill::*;
 pub mod lc_0876_middle_of_the_linked_list;
 pub use lc_0876_middle_of_the_linked_list::*;
 
-pub mod lc_0691_stickers_to_spell_word;
-pub use lc_0691_stickers_to_spell_word::*;
+pub mod lc_0938_range_sum_of_bst;
+pub use lc_0938_range_sum_of_bst::*;
 
 pub mod lc_0973_k_closest_points_to_origin;
 pub use lc_0973_k_closest_points_to_origin::*;
