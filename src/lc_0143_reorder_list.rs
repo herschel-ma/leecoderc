@@ -50,14 +50,14 @@ mod tests {
     #[test]
     fn test_case_1() {
         let mut head = ListNode::from_vec(&[1, 2, 3, 4]);
-        Solution::recorder_list(&mut head);
+        Solution::reorder_list(&mut head);
         assert_eq!(head, ListNode::from_vec(&[1, 4, 2, 3]));
     }
 
     #[test]
     fn test_case_2() {
         let mut head = ListNode::from_vec(&[1, 2, 3, 4, 5]);
-        Solution::recorder_list(&mut head);
+        Solution::reorder_list(&mut head);
         assert_eq!(head, ListNode::from_vec(&[1, 5, 2, 4, 3]));
     }
 }
