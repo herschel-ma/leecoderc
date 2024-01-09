@@ -322,6 +322,9 @@ pub use lc_0129_sum_root_to_leaf_numbers::*;
 pub mod lc_0141_linked_list_cycle;
 pub use lc_0141_linked_list_cycle::*;
 
+pub mod lc_0143_reorder_list;
+pub use lc_0143_reorder_list::*;
+
 pub mod lc_0155_min_stack;
 pub use lc_0155_min_stack::*;
 
