@@ -1,3 +1,4 @@
+use std::collections::VecDeque;
 use std::fmt::{Display, Formatter};
 // Definition for a binary tree node.
 use std::cell::RefCell;
@@ -19,16 +20,56 @@ impl TreeNode {
             right: None,
         }
     }
+
+    pub fn get_height(root: &Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        fn dfs(root: &Option<Rc<RefCell<TreeNode>>>) -> i32 {
+            match root {
+                None => 0,
+                Some(node) => {
+                    let node = node.borrow();
+                    1 + dfs(&node.left).max(dfs(&node.right))
+                }
+            }
+        }
+        dfs(root)
+    }
+
+    /// helper: https://rsj217.github.io/leetcode-in-rust/
     pub fn from_vec(vals: &[i32]) -> Option<Rc<RefCell<TreeNode>>> {
         if vals.is_empty() {
             return None;
         }
-        let mut root = Self::new(vals[0]);
-        root.fill(vals, 0);
-        Some(Rc::new(RefCell::new(root)))
+
+        let size = vals.len();
+        let root = Some(Rc::new(RefCell::new(Self::new(vals[0]))));
+        let mut index = 0;
+        let mut queue = VecDeque::new();
+        queue.push_back(root.clone());
+
+        while !queue.is_empty() {
+            let q_size = queue.len();
+            for _ in 0..q_size {
+                if let Some(n) = queue.pop_front().flatten() {
+                    let mut node = n.borrow_mut();
+                    let lindex = index * 2 + 1;
+                    let rindex = index * 2 + 2;
+                    if lindex < size && vals[lindex] != i32::MIN {
+                        node.left = Some(Rc::new(RefCell::new(Self::new(vals[lindex]))));
+                        queue.push_back(node.left.clone());
+                    }
+                    if rindex < size && vals[rindex] != i32::MIN {
+                        node.right = Some(Rc::new(RefCell::new(Self::new(vals[rindex]))));
+                        queue.push_back(node.right.clone())
+                    }
+                }
+                index += 1;
+            }
+        }
+
+        root
     }
 
-    fn fill(&mut self, vals: &[i32], index: usize) {
+    fn _fill(&mut self, vals: &[i32], index: usize) {
         let left_node = index * 2 + 1;
         if left_node < vals.len() && vals[left_node] != i32::MIN {
             self.left = Some(Rc::new(RefCell::new(Self::new(vals[left_node]))));
@@ -36,7 +77,7 @@ impl TreeNode {
                 .as_ref()
                 .unwrap()
                 .borrow_mut()
-                .fill(vals, left_node);
+                ._fill(vals, left_node);
         }
 
         let right_node = left_node + 1;
@@ -46,7 +87,7 @@ impl TreeNode {
                 .as_ref()
                 .unwrap()
                 .borrow_mut()
-                .fill(vals, right_node);
+                ._fill(vals, right_node);
         }
     }
 
