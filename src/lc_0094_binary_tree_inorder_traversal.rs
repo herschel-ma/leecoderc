@@ -26,8 +26,7 @@ mod tests {
 
     #[test]
     fn test_case_1() {
-        let root = TreeNode::from_vec(&[1, i32::MIN, 2, 3, 3, 3]);
-        println!("{root:#?}");
+        let root = TreeNode::from_vec(&[1, i32::MIN, 2, 3]);
         assert_eq!(Solution::inorder_traversal(root), vec![1, 3, 2]);
     }
 
