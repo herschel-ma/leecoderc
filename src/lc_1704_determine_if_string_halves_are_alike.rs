@@ -2,18 +2,12 @@ use crate::Solution;
 
 impl Solution {
     pub fn halves_are_alike(s: String) -> bool {
-        fn is_vowel(c: char) -> bool {
-            let vowels = "aeiouAEIOU";
-            vowels.contains(c)
-        }
+        let (s1, s2) = s.split_at(s.len() / 2);
 
-        let s = s.split_at(s.len() / 2);
-
-        s.0.chars().filter(|&c| is_vowel(c)).count().eq(&s
-            .1
-            .chars()
-            .filter(|&c| is_vowel(c))
-            .count())
+        s1.chars()
+            .filter(|&c| "aeiouAEIOU".contains(c))
+            .count()
+            .eq(&s2.chars().filter(|&c| "aeiouAEIOU".contains(c)).count())
     }
 }
 
