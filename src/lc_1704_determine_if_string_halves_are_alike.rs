@@ -9,16 +9,11 @@ impl Solution {
 
         let s = s.split_at(s.len() / 2);
 
-        s.0.chars()
+        s.0.chars().filter(|&c| is_vowel(c)).count().eq(&s
+            .1
+            .chars()
             .filter(|&c| is_vowel(c))
-            .collect::<Vec<char>>()
-            .len()
-            .eq(&s
-                .1
-                .chars()
-                .filter(|&c| is_vowel(c))
-                .collect::<Vec<char>>()
-                .len())
+            .count())
     }
 }
 
