@@ -421,6 +421,9 @@ pub use lc_1141_user_activity_for_the_past_30_days::*;
 pub mod lc_1235_maximum_profit_in_job_scheduling;
 pub use lc_1235_maximum_profit_in_job_scheduling::*;
 
+pub mod lc_1347_minimum_number_of_steps_to_make_two_strings;
+pub use lc_1347_minimum_number_of_steps_to_make_two_strings::*;
+
 pub mod lc_1361_validate_binary_tree_nodes;
 pub use lc_1361_validate_binary_tree_nodes::*;
 
