@@ -33,7 +33,7 @@ mod tests {
     #[test]
     fn test_case_2() {
         let root = TreeNode::from_vec(&[]);
-        assert_eq!(Solution::inorder_traversal(root), vec![]);
+        assert_eq!(Solution::inorder_traversal(root), Vec::<i32>::new());
     }
 
     #[test]

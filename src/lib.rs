@@ -361,6 +361,9 @@ pub use lc_0295_find_median_from_data_stream::*;
 pub mod lc_0300_longest_increasing_subsequence;
 pub use lc_0300_longest_increasing_subsequence::*;
 
+pub mod lc_0380_insert_delete_getrandom;
+pub use lc_0380_insert_delete_getrandom::*;
+
 pub mod lc_0383_ransom_note;
 pub use lc_0383_ransom_note::*;
 

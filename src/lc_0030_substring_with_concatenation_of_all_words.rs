@@ -82,7 +82,7 @@ mod tests {
             String::from("best"),
             String::from("word"),
         ];
-        let res = vec![];
+        let res: Vec<i32> = vec![];
         assert_eq!(find_substring(s, words), res)
     }
 }
