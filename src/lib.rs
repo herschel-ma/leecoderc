@@ -409,6 +409,9 @@ pub use lc_0872_leaf_similar_trees::*;
 pub mod lc_0876_middle_of_the_linked_list;
 pub use lc_0876_middle_of_the_linked_list::*;
 
+pub mod lc_0907_sum_of_subarray_minimums;
+pub use lc_0907_sum_of_subarray_minimums::*;
+
 pub mod lc_0931_minimum_falling_path_sum;
 pub use lc_0931_minimum_falling_path_sum::*;
 
