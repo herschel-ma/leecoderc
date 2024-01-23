@@ -439,6 +439,9 @@ pub use lc_1207_unique_number_of_occurences::*;
 pub mod lc_1235_maximum_profit_in_job_scheduling;
 pub use lc_1235_maximum_profit_in_job_scheduling::*;
 
+pub mod lc_1239_maximum_length_of_a_concatenated_string_with_unique_characters;
+pub use lc_1239_maximum_length_of_a_concatenated_string_with_unique_characters::*;
+
 pub mod lc_1347_minimum_number_of_steps_to_make_two_strings;
 pub use lc_1347_minimum_number_of_steps_to_make_two_strings::*;
 
