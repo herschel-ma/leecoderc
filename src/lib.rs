@@ -451,6 +451,9 @@ pub use lc_1361_validate_binary_tree_nodes::*;
 pub mod lc_1441_build_an_array_with_stack_operations;
 pub use lc_1441_build_an_array_with_stack_operations::*;
 
+pub mod lc_1457_pseudo_palindromic_paths_in_a_binary_tree;
+pub use lc_1457_pseudo_palindromic_paths_in_a_binary_tree::*;
+
 pub mod lc_1503_last_moment_before_all_ants_fall_out_of_a_plank;
 pub use lc_1503_last_moment_before_all_ants_fall_out_of_a_plank::*;
 
