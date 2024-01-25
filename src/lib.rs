@@ -433,6 +433,9 @@ pub use lc_1026_maximum_difference_between_node_and_ancestor::*;
 pub mod lc_1141_user_activity_for_the_past_30_days;
 pub use lc_1141_user_activity_for_the_past_30_days::*;
 
+pub mod lc_1143_longest_common_subsequence;
+pub use lc_1143_longest_common_subsequence::*;
+
 pub mod lc_1207_unique_number_of_occurences;
 pub use lc_1207_unique_number_of_occurences::*;
 
