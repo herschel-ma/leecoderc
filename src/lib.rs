@@ -394,6 +394,9 @@ pub use lc_0542_01_matrix::*;
 pub mod lc_0543_diameter_of_binary_tree;
 pub use lc_0543_diameter_of_binary_tree::*;
 
+pub mod lc_0576_out_of_boundary_paths;
+pub use lc_0576_out_of_boundary_paths::*;
+
 pub mod lc_0645_set_mismatch;
 pub use lc_0645_set_mismatch::*;
 
