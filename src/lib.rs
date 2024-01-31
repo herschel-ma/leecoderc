@@ -412,6 +412,9 @@ pub use lc_0704_binary_search::*;
 pub mod lc_0733_flood_fill;
 pub use lc_0733_flood_fill::*;
 
+pub mod lc_0739_daily_temperatures;
+pub use lc_0739_daily_temperatures::*;
+
 pub mod lc_0872_leaf_similar_trees;
 pub use lc_0872_leaf_similar_trees::*;
 
