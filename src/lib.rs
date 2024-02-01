@@ -511,6 +511,8 @@ pub use lc_2610_convert_an_array_into_a_2d_array_with_conditions::*;
 pub mod lc_2732_painting_the_walls;
 pub use lc_2732_painting_the_walls::*;
 
+pub mod lc_2966_divide_array_into_arrays_with_max_difference;
+
 pub mod select_sort;
 pub use select_sort::*;
 
