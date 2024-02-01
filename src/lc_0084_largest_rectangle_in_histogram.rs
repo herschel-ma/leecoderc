@@ -63,7 +63,7 @@ impl Solution {
             stack.push((start, h));
         }
 
-        for (_, h) in stack.into_iter().enumerate() {
+        for h in stack.into_iter() {
             max_area = max_area.max(h.1 * (n - h.0) as i32);
         }
 

@@ -18,7 +18,7 @@ pub fn longest_palindrome(s: String) -> i32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::longest_palindrome;
+    use super::*;
 
     #[test]
     fn ex1() {

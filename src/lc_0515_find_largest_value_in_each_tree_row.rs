@@ -32,7 +32,7 @@ pub fn largest_values(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
 
 #[cfg(test)]
 mod tests {
-    use crate::{largest_values, TreeNode};
+    use super::*;
 
     #[test]
     fn case() {

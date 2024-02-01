@@ -96,7 +96,7 @@ pub fn validate_binary_tree_nodes(n: i32, left_child: Vec<i32>, right_child: Vec
 
 #[cfg(test)]
 mod tests {
-    use crate::validate_binary_tree_nodes;
+    use super::*;
 
     #[test]
     fn case1() {

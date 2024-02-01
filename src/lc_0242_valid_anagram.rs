@@ -10,7 +10,7 @@ pub fn is_anagram(s: String, t: String) -> bool {
 
 #[cfg(test)]
 mod test {
-    use crate::is_anagram;
+    use super::*;
 
     #[test]
     fn ex1() {

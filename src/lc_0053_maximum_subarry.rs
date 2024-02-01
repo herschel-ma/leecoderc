@@ -19,7 +19,7 @@ pub fn max_sub_array_1(nums: Vec<i32>) -> i32 {
 pub fn max_sub_array(nums: Vec<i32>) -> i32 {
     let mut ans = nums[0];
     let mut f = nums[0];
-    for (_, v) in nums.iter().skip(1).enumerate() {
+    for v in nums.iter().skip(1) {
         f = f.max(0) + v;
         ans = ans.max(f);
     }

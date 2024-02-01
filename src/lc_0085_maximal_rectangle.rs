@@ -4,7 +4,7 @@ impl Solution {
     pub fn maximal_rectangle(matrix: Vec<Vec<char>>) -> i32 {
         let mut max_area = 0;
         let mut heights = vec![0; matrix[0].len()];
-        for (_i, row) in matrix.iter().enumerate() {
+        for row in matrix.iter() {
             for (j, v) in row.iter().enumerate() {
                 if v.to_digit(2) == Some(1) {
                     heights[j] += 1;
