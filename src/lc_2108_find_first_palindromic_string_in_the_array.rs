@@ -21,7 +21,7 @@ impl Solution {
         }
         words
             .into_iter()
-            .find(|s| is_palindrome(&s))
+            .find(|s| is_palindrome(s))
             .unwrap_or(String::from(""))
             .to_string()
     }
