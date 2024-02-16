@@ -359,6 +359,8 @@ pub mod lc_1441_build_an_array_with_stack_operations;
 
 pub mod lc_1457_pseudo_palindromic_paths_in_a_binary_tree;
 
+pub mod lc_1481_least_number_of_unique_integers_after_k_removals;
+
 pub mod lc_1503_last_moment_before_all_ants_fall_out_of_a_plank;
 
 pub mod lc_1535_find_the_winner_of_an_array_game;
