@@ -339,6 +339,8 @@ pub mod lc_0938_range_sum_of_bst;
 
 pub mod lc_0973_k_closest_points_to_origin;
 
+pub mod lc_0997_find_the_town_judge;
+
 pub mod lc_1026_maximum_difference_between_node_and_ancestor;
 
 pub mod lc_1141_user_activity_for_the_past_30_days;
