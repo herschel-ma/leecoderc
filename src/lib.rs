@@ -327,6 +327,8 @@ pub mod lc_0733_flood_fill;
 
 pub mod lc_0739_daily_temperatures;
 
+pub mod lc_0787_cheapest_flights_within_k_steps;
+
 pub mod lc_0872_leaf_similar_trees;
 
 pub mod lc_0876_middle_of_the_linked_list;
