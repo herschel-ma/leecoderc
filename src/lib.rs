@@ -386,6 +386,8 @@ pub mod lc_1845_seat_reservation_manager;
 pub mod lc_2050_parallel_courses_3;
 pub use lc_2050_parallel_courses_3::*;
 
+pub mod lc_2092_find_all_people_with_secret;
+
 pub mod lc_2108_find_first_palindromic_string_in_the_array;
 
 pub mod lc_2125_number_of_laser_beams_in_a_bank;
