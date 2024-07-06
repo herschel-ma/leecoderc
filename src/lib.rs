@@ -408,6 +408,8 @@ pub mod lc_2358_amount_of_time_for_binary_tree_to_be_infected;
 
 pub mod lc_2433_find_the_original_array_of_prefixes;
 
+pub mod lc_2582_pass_the_pillow;
+
 pub mod lc_2610_convert_an_array_into_a_2d_array_with_conditions;
 
 pub mod lc_2732_painting_the_walls;
