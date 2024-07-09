@@ -385,6 +385,8 @@ pub mod lc_1657_determine_if_two_strings_are_close;
 
 pub mod lc_1658_minimum_operations_to_reduce_x_to_zero;
 
+pub mod lc_1701_average_waiting_time;
+
 pub mod lc_1704_determine_if_string_halves_are_alike;
 
 pub mod lc_1802_maximum_value_at_a_given_index_in_a_bounded_array;
