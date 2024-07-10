@@ -377,6 +377,8 @@ pub mod lc_1535_find_the_winner_of_an_array_game;
 
 pub mod lc_1609_even_odd_tree;
 
+pub mod lc_1598_crawler_log_folder;
+
 pub mod lc_1624_largest_substring_between_two_equal_chars;
 
 pub mod lc_1642_furthest_building_you_can_reach;
