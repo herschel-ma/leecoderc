@@ -355,6 +355,8 @@ pub mod lc_1141_user_activity_for_the_past_30_days;
 
 pub mod lc_1143_longest_common_subsequence;
 
+pub mod lc_1190_reverse_substrings_between_each_pair_of_parentheses;
+
 pub mod lc_1207_unique_number_of_occurences;
 
 pub mod lc_1235_maximum_profit_in_job_scheduling;
