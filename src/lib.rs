@@ -393,6 +393,8 @@ pub mod lc_1701_average_waiting_time;
 
 pub mod lc_1704_determine_if_string_halves_are_alike;
 
+pub mod lc_1717_maximum_score_from_removing_substrings;
+
 pub mod lc_1802_maximum_value_at_a_given_index_in_a_bounded_array;
 
 pub mod lc_1845_seat_reservation_manager;
