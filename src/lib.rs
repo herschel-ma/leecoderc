@@ -327,6 +327,8 @@ pub mod lc_0703_kth_largest_element_in_a_stream;
 
 pub mod lc_0704_binary_search;
 
+pub mod lc_0726_number_of_atoms;
+
 pub mod lc_0733_flood_fill;
 
 pub mod lc_0739_daily_temperatures;
