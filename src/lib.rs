@@ -412,6 +412,8 @@ pub mod lc_2108_find_first_palindromic_string_in_the_array;
 
 pub mod lc_2125_number_of_laser_beams_in_a_bank;
 
+pub mod lc_2196_create_binary_tree_from_descriptions;
+
 pub mod lc_2225_find_players_with_zero_or_one_losses;
 
 pub mod lc_2265_count_nodes_equal_to_average_of_subtree;
