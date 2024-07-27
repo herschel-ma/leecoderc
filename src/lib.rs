@@ -441,6 +441,8 @@ pub mod lc_2971_find_polygon_with_largest_perimeter;
 
 pub mod lc_2966_divide_array_into_arrays_with_max_difference;
 
+pub mod lc_2976_minimum_cost_to_convert_string_i;
+
 pub mod select_sort;
 pub use select_sort::*;
 
