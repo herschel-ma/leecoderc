@@ -418,6 +418,8 @@ pub mod lc_2108_find_first_palindromic_string_in_the_array;
 
 pub mod lc_2125_number_of_laser_beams_in_a_bank;
 
+pub mod lc_2134_minimum_swaps_to_group_all_1s_together_ii;
+
 pub mod lc_2196_create_binary_tree_from_descriptions;
 
 pub mod lc_2225_find_players_with_zero_or_one_losses;
