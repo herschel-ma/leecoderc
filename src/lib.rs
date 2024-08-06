@@ -451,6 +451,8 @@ pub mod lc_2966_divide_array_into_arrays_with_max_difference;
 
 pub mod lc_2976_minimum_cost_to_convert_string_i;
 
+pub mod lc_3016_minimum_number_of_pushes_to_type_word_ii;
+
 pub mod select_sort;
 pub use select_sort::*;
 
