@@ -287,6 +287,8 @@ pub mod lc_0235_lowest_common_ancestor_of_a_binary_search_tree;
 
 pub mod lc_0242_valid_anagram;
 
+pub mod lc_273_integer_to_english_words;
+
 pub mod lc_0278_first_bad_version;
 
 pub mod lc_0295_find_median_from_data_stream;
