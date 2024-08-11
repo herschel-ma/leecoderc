@@ -389,9 +389,9 @@ pub mod lc_1503_last_moment_before_all_ants_fall_out_of_a_plank;
 
 pub mod lc_1535_find_the_winner_of_an_array_game;
 
-pub mod lc_1609_even_odd_tree;
-
 pub mod lc_1598_crawler_log_folder;
+
+pub mod lc_1609_even_odd_tree;
 
 pub mod lc_1624_largest_substring_between_two_equal_chars;
 
