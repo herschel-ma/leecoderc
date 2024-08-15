@@ -389,6 +389,8 @@ pub mod lc_1503_last_moment_before_all_ants_fall_out_of_a_plank;
 
 pub mod lc_1535_find_the_winner_of_an_array_game;
 
+pub mod lc_1568_minimum_number_of_days_to_disconnect_island;
+
 pub mod lc_1598_crawler_log_folder;
 
 pub mod lc_1609_even_odd_tree;
