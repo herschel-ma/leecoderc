@@ -17,10 +17,10 @@ pub fn find_mode(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
     r(&root, &mut freq);
     let mut v: Vec<_> = freq.iter().collect();
     v.sort_by(|a, b| b.1.cmp(a.1));
-    println!("{:?}", v);
+    // println!("{:?}", v);
     let mx = v[0].1;
     for (k, val) in v {
-        println!("{}", mx);
+        // println!("{}", mx);
         if mx == val {
             res.push(*k)
         }
@@ -31,7 +31,7 @@ pub fn find_mode(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    #[cfg(ignore)]
+
     #[test]
     fn case1() {
         let root = &[1, i32::MIN, 2, 2];
