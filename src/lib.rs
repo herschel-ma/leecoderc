@@ -361,6 +361,8 @@ pub mod lc_1105_filling_bookcase_shelves;
 
 pub mod lc_1110_delete_nodes_and_return_forest;
 
+pub mod lc_1140_stone_game_ii;
+
 pub mod lc_1141_user_activity_for_the_past_30_days;
 
 pub mod lc_1143_longest_common_subsequence;
