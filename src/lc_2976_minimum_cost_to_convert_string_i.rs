@@ -1,8 +1,5 @@
 use crate::Solution;
-use std::{
-    cmp::Reverse,
-    collections::{BinaryHeap, HashMap},
-};
+use std::{cmp::Reverse, collections::BinaryHeap};
 
 impl Solution {
     pub fn minimum_cost_1(
