@@ -323,6 +323,8 @@ pub mod lc_0576_out_of_boundary_paths;
 
 pub mod lc_0645_set_mismatch;
 
+pub mod lc_0664_strange_printer;
+
 pub mod lc_0691_stickers_to_spell_word;
 
 pub mod lc_0703_kth_largest_element_in_a_stream;
