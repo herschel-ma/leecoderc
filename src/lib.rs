@@ -267,6 +267,8 @@ pub mod lc_0141_linked_list_cycle;
 
 pub mod lc_0143_reorder_list;
 
+pub mod lc_0145_binary_tree_postorder_traversal;
+
 pub mod lc_0155_min_stack;
 
 pub mod lc_0169_majority_element;
