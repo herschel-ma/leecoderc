@@ -28,7 +28,7 @@ mod tests {
             "nat".to_string(),
             "bat".to_string(),
         ];
-        let output = vec![
+        let output = [
             vec!["bat".to_string()],
             vec!["nat".to_string(), "tan".to_string()],
             vec!["ate".to_string(), "eat".to_string(), "tea".to_string()],
@@ -39,14 +39,14 @@ mod tests {
     #[test]
     fn test_case_2() {
         let strs = vec!["".to_string()];
-        let output = vec![vec!["".to_string()]];
+        let output = [vec!["".to_string()]];
         assert_eq!(group_anagrams(strs).len(), output.len());
     }
 
     #[test]
     fn test_case_3() {
         let strs = vec!["a".to_string()];
-        let output = vec![vec!["a".to_string()]];
+        let output = [vec!["a".to_string()]];
         assert_eq!(group_anagrams(strs).len(), output.len());
     }
 }

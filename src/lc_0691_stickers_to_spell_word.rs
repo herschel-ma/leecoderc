@@ -50,7 +50,7 @@ use std::collections::HashMap;
 ///     i32: 拼写出单词需要的最少的贴纸数量
 pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
     let n = target.len();
-    let mut dp = vec![std::i32::MAX; 1 << n];
+    let mut dp = vec![i32::MAX; 1 << n];
     dp[0] = 0;
     let cnts: Vec<HashMap<char, i32>> = stickers
         .iter()
@@ -63,7 +63,7 @@ pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
         })
         .collect();
     for state in 0..(1 << n) {
-        if dp[state] == std::i32::MAX {
+        if dp[state] == i32::MAX {
             continue;
         }
         for cnt in &cnts {
@@ -83,7 +83,7 @@ pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
             dp[now] = dp[now].min(dp[state] + 1);
         }
     }
-    if dp[(1 << n) - 1] == std::i32::MAX {
+    if dp[(1 << n) - 1] == i32::MAX {
         -1
     } else {
         dp[(1 << n) - 1]

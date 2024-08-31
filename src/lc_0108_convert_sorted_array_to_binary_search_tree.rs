@@ -28,7 +28,7 @@ mod tests {
     #[test]
     fn test_case_1() {
         let nums = vec![-10, -3, 0, 5, 9];
-        let candidates = vec![
+        let candidates = [
             TreeNode::from_vec(&[0, -3, 9, -10, i32::MIN, 5]),
             TreeNode::from_vec(&[0, -10, 5, i32::MIN, -3, i32::MIN, 9]),
         ];
@@ -39,7 +39,7 @@ mod tests {
     #[test]
     fn test_case_2() {
         let nums = vec![1, 3];
-        let candidates = vec![
+        let candidates = [
             TreeNode::from_vec(&[3, 1]),
             TreeNode::from_vec(&[1, i32::MIN, 3]),
         ];
@@ -48,4 +48,3 @@ mod tests {
         assert!(candidates.contains(&res));
     }
 }
-

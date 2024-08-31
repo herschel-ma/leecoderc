@@ -45,7 +45,7 @@ mod tests {
     #[test]
     fn test_case_1() {
         let s = String::from("25525511135");
-        let res = vec![
+        let res = [
             String::from("255.255.111.35"),
             String::from("255.255.11.135"),
         ];
@@ -56,7 +56,7 @@ mod tests {
     #[test]
     fn test_case_2() {
         let s = String::from("0000");
-        let res = vec![String::from("0.0.0.0")];
+        let res = [String::from("0.0.0.0")];
         let ans = Solution::restore_ip_addresses(s);
         res.iter().for_each(|e| assert!(ans.contains(e)));
     }
@@ -64,7 +64,7 @@ mod tests {
     #[test]
     fn test_case_3() {
         let s = String::from("101023");
-        let res = vec![
+        let res = [
             String::from("1.0.10.23"),
             String::from("1.0.102.3"),
             String::from("10.10.2.3"),

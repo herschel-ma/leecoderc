@@ -2,7 +2,7 @@ use crate::Solution;
 
 impl Solution {
     #[allow(clippy::mut_range_bound)]
-    pub fn remove_duplicates_1(nums: &mut Vec<i32>) -> i32 {
+    pub fn remove_duplicates_1(nums: &mut [i32]) -> i32 {
         match nums.len() {
             0..=2 => nums.len() as i32,
             _ => {
@@ -33,7 +33,7 @@ impl Solution {
         nums.len() as i32
     }
 
-    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+    pub fn remove_duplicates(nums: &mut [i32]) -> i32 {
         let mut k = 0;
         for i in 0..nums.len() {
             if k < 2 || nums[i] != nums[k - 2] {

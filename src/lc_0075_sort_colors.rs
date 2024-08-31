@@ -1,4 +1,4 @@
-pub fn sort_colors(nums: &mut Vec<i32>) {
+pub fn sort_colors(nums: &mut [i32]) {
     let n = nums.len();
     if n <= 1 {
         return;

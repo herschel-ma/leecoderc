@@ -16,7 +16,7 @@ impl Solution {
             max_area = max_area.max(largest_rectangle_area(&heights));
         }
 
-        fn largest_rectangle_area(heights: &Vec<i32>) -> i32 {
+        fn largest_rectangle_area(heights: &[i32]) -> i32 {
             let mut stack: Vec<(usize, i32)> = vec![];
             let mut max_area = 0;
             for (i, h) in heights.iter().enumerate() {

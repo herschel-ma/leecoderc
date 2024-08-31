@@ -1,4 +1,4 @@
-pub fn next_permutation(nums: &mut Vec<i32>) {
+pub fn next_permutation(nums: &mut [i32]) {
     // step 1: 找到从右向左的第一对降序对
     let mut i = nums.len() as i32 - 2;
     while i >= 0 && nums[i as usize] >= nums[(i + 1) as usize] {

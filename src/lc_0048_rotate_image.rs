@@ -1,4 +1,4 @@
-pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
+pub fn rotate(matrix: &mut [Vec<i32>]) {
     let m = matrix.len();
     let n = matrix[0].len();
     // up and down swap
