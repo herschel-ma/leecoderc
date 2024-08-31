@@ -395,6 +395,8 @@ pub mod lc_1481_least_number_of_unique_integers_after_k_removals;
 
 pub mod lc_1503_last_moment_before_all_ants_fall_out_of_a_plank;
 
+pub mod lc_1514_path_with_maximum_probability;
+
 pub mod lc_1535_find_the_winner_of_an_array_game;
 
 pub mod lc_1568_minimum_number_of_days_to_disconnect_island;
