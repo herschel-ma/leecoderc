@@ -452,6 +452,8 @@ pub mod lc_2610_convert_an_array_into_a_2d_array_with_conditions;
 
 pub mod lc_2678_number_of_senior_citizens;
 
+pub mod lc_2699_modify_graph_edge_weights;
+
 pub mod lc_2751_robot_collisions;
 
 pub mod lc_2732_painting_the_walls;
