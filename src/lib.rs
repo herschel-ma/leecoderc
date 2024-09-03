@@ -423,6 +423,8 @@ pub mod lc_1802_maximum_value_at_a_given_index_in_a_bounded_array;
 
 pub mod lc_1845_seat_reservation_manager;
 
+pub mod lc_1894_find_the_student_that_will_replace_the_chalk;
+
 pub mod lc_2050_parallel_courses_3;
 pub use lc_2050_parallel_courses_3::*;
 
