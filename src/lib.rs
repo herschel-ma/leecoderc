@@ -427,6 +427,8 @@ pub mod lc_1894_find_the_student_that_will_replace_the_chalk;
 
 pub mod lc_1945_sum_of_digits_of_string_after_convert;
 
+pub mod lc_2022_convert_array_into_2d_array;
+
 pub mod lc_2050_parallel_courses_3;
 pub use lc_2050_parallel_courses_3::*;
 
