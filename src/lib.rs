@@ -479,6 +479,8 @@ pub mod lc_2976_minimum_cost_to_convert_string_i;
 
 pub mod lc_3016_minimum_number_of_pushes_to_type_word_ii;
 
+pub mod lc_3217_delete_nodes_from_linked_list_present_in_array;
+
 pub mod select_sort;
 pub use select_sort::*;
 
