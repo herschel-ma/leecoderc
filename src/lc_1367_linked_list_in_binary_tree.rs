@@ -73,7 +73,8 @@ impl Solution {
 mod tests {
     use super::*;
     type So = fn(head: Option<Box<ListNode>>, root: Option<Rc<RefCell<TreeNode>>>) -> bool;
-    const S: So = Solution::is_sub_path_2;
+    const S1: So = Solution::is_sub_path;
+    const S2: So = Solution::is_sub_path_2;
 
     #[test]
     fn test_case_1() {
@@ -97,7 +98,8 @@ mod tests {
             1,
             3,
         ]);
-        assert!(S(head, root));
+        assert!(S1(head.clone(), root.clone()));
+        assert!(S2(head, root));
     }
 
     #[test]
@@ -122,7 +124,8 @@ mod tests {
             1,
             3,
         ]);
-        assert!(S(head, root));
+        assert!(S1(head.clone(), root.clone()));
+        assert!(S2(head, root));
     }
 
     #[test]
@@ -147,6 +150,7 @@ mod tests {
             1,
             3,
         ]);
-        assert!(!S(head, root));
+        assert!(!S1(head.clone(), root.clone()));
+        assert!(!S2(head, root));
     }
 }
