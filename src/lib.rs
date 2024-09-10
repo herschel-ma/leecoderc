@@ -475,6 +475,8 @@ pub mod lc_2751_robot_collisions;
 pub mod lc_2732_painting_the_walls;
 pub use lc_2732_painting_the_walls::*;
 
+pub mod lc_2807_insert_greatest_common_divisors_in_linked_list;
+
 pub mod lc_2864_maximum_odd_binary_number;
 
 pub mod lc_2971_find_polygon_with_largest_perimeter;
