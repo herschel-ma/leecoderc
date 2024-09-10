@@ -456,6 +456,8 @@ pub mod lc_2225_find_players_with_zero_or_one_losses;
 
 pub mod lc_2265_count_nodes_equal_to_average_of_subtree;
 
+pub mod lc_2326_spiral_matrix_iv;
+
 pub mod lc_2358_amount_of_time_for_binary_tree_to_be_infected;
 
 pub mod lc_2433_find_the_original_array_of_prefixes;
