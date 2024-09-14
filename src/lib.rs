@@ -466,6 +466,8 @@ pub mod lc_2326_spiral_matrix_iv;
 
 pub mod lc_2358_amount_of_time_for_binary_tree_to_be_infected;
 
+pub mod lc_2419_longest_subarray_with_maximum_bitwise_and;
+
 pub mod lc_2433_find_the_original_array_of_prefixes;
 
 pub mod lc_2582_pass_the_pillow;
