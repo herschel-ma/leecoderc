@@ -393,6 +393,8 @@ pub mod lc_1361_validate_binary_tree_nodes;
 
 pub mod lc_1367_linked_list_in_binary_tree;
 
+pub mod lc_1371_find_the_longest_substring_containing_vowels_in_even_count;
+
 pub mod lc_1441_build_an_array_with_stack_operations;
 
 pub mod lc_1457_pseudo_palindromic_paths_in_a_binary_tree;
