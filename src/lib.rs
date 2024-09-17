@@ -353,6 +353,8 @@ pub mod lc_0872_leaf_similar_trees;
 
 pub mod lc_0876_middle_of_the_linked_list;
 
+pub mod lc_0884_uncommon_words_from_two_sentences;
+
 pub mod lc_0907_sum_of_subarray_minimums;
 
 pub mod lc_0931_minimum_falling_path_sum;
