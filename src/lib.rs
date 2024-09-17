@@ -317,6 +317,8 @@ pub mod lc_0513_find_bottom_left_tree_value;
 
 pub mod lc_0515_find_largest_value_in_each_tree_row;
 
+pub mod lc_0539_minimum_time_difference;
+
 pub mod lc_0542_01_matrix;
 
 pub mod lc_0543_diameter_of_binary_tree;
