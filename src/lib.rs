@@ -289,6 +289,8 @@ pub mod lc_0232_implement_queue_using_stacks;
 
 pub mod lc_0235_lowest_common_ancestor_of_a_binary_search_tree;
 
+pub mod lc_0241_different_ways_to_add_parentheses;
+
 pub mod lc_0242_valid_anagram;
 
 pub mod lc_0273_integer_to_english_words;
