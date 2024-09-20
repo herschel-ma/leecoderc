@@ -279,6 +279,8 @@ pub mod lc_0198_house_robber;
 
 pub mod lc_0206_reverse_linked_list;
 
+pub mod lc_0214_shortest_palindrome;
+
 pub mod lc_0217_contains_duplicate;
 
 pub mod lc_0222_count_complete_tree_nodes;
