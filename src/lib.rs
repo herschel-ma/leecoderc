@@ -307,6 +307,8 @@ pub mod lc_0380_insert_delete_getrandom;
 
 pub mod lc_0383_ransom_note;
 
+pub mod lc_0386_lexicographical_numbers;
+
 pub mod lc_0394_decode_string;
 
 pub mod lc_0409_longest_palindrome;
