@@ -313,6 +313,8 @@ pub mod lc_0394_decode_string;
 
 pub mod lc_0409_longest_palindrome;
 
+pub mod lc_0440_k_th_smallest_in_lexicographical_order;
+
 pub mod lc_0446_arithmetic_slice_ii_subsequence;
 
 pub mod lc_0455_assign_cookies;
