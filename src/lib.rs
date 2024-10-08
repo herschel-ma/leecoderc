@@ -351,6 +351,8 @@ pub mod lc_0726_number_of_atoms;
 
 pub mod lc_0729_my_calendar_i;
 
+pub mod lc_0731_my_calendar_ii;
+
 pub mod lc_0733_flood_fill;
 
 pub mod lc_0739_daily_temperatures;
