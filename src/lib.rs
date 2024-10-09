@@ -335,6 +335,8 @@ pub mod lc_0543_diameter_of_binary_tree;
 
 pub mod lc_0576_out_of_boundary_paths;
 
+pub mod lc_0641_design_circular_deque;
+
 pub mod lc_0645_set_mismatch;
 
 pub mod lc_0664_strange_printer;
