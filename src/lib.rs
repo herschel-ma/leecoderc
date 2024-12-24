@@ -525,6 +525,8 @@ pub mod lc_3016_minimum_number_of_pushes_to_type_word_ii;
 
 pub mod lc_3043_find_the_length_of_the_longest_common_prefix;
 
+pub mod lc_3203_find_minimum_diameter_after_mergeing_two_trees;
+
 pub mod lc_3217_delete_nodes_from_linked_list_present_in_array;
 
 pub mod select_sort;
